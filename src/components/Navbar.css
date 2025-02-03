@@ -31,3 +31,38 @@
   .navbar ul li a:hover {
     text-decoration: underline;
   }
+
+  /* Dropdown styles */
+.dropdown {
+  position: relative; /* Position the dropdown relative to its parent */
+}
+
+.dropdown-content {
+  display: none; /* Initially hide the dropdown content */
+  position: absolute;
+  top: 100%; /* Position the dropdown below the link */
+  left: 0;
+  background-color: #444;
+  padding: 0;
+  list-style-type: none;
+  width: 180px; /* Optional: adjust to your desired dropdown width */
+}
+
+.dropdown-content li a {
+  padding: 8px 12px;
+  display: block;
+}
+
+.dropdown-content li a:hover {
+  background-color: #666;
+}
+
+/* Show dropdown content when hovering over the parent */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Ensure dropdown items are not inlined with the parent links */
+.dropdown-content li {
+  padding: 0;
+}
