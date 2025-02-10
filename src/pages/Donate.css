@@ -1,0 +1,91 @@
+
+.donate-container {
+    padding: 1.5rem;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #ffeee0;
+    min-height: 100vh;
+  }
+  
+  .donate-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: #4a7552;
+    margin-bottom: 2rem;
+  }
+  
+  .section {
+    background-color: #fff8f2;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border: 2px solid #ff735c;
+    margin-top: 2rem;
+  }
+  
+  .section h2 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #4a7552;
+  }
+  
+  .section p {
+    color: #555;
+    margin-top: 0.5rem;
+  }
+  
+  .sponsorship-benefits {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    color: #555;
+    margin-top: 0.5rem;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    border: 1px solid #ddd;
+    padding: 0.75rem;
+    width: 100%;
+    margin-bottom: 0.75rem;
+    border-radius: 0.5rem;
+    background-color: #ffeee0;
+    transition: border-color 0.2s ease-in-out;
+  }
+  
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    outline: none;
+    border-color: #ff735c;
+  }
+  
+  .donate-button {
+    width: 100%;
+    background-color: #ff735c;
+    color: white;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    display: inline-block;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .donate-button:hover {
+    background-color: #e65b49;
+  }
+  
+  .qr-code {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  
+  .qr-code img {
+    width: 10rem;
+    border: 2px solid #ff735c;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  
