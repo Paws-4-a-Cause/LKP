@@ -10,6 +10,7 @@ import InKindDonations from "./pages/InKindDonations";
 import Events from "./pages/Events";
 import CatTherapy from "./pages/CatTherapy";
 import ForCatRescuers from "./pages/ForCatRescuers";
+import About from "./pages/About";
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
         <Route path="/events" element={<Events />} />
         <Route path="/cat-therapy" element={<CatTherapy />} />
         <Route path="/for-cat-rescuers" element={<ForCatRescuers />} />
+        <Route path="/about" element={<About />} />
       </Routes>
     </Router>
   );
