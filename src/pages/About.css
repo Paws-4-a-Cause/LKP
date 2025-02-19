@@ -1,101 +1,161 @@
+/* General Page Styling */
 .about-container {
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px;
-    text-align: center;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fdf5f1; /* Light pink-beige background */
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Arial", sans-serif;
+}
+
+/* Hero Section - Full Width */
+.hero-section {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image {
+  width: 100%;
+  height: 500px; /* Full-width and rectangular */
+  object-fit: cover;
+}
+
+/* Hero Overlay */
+.hero-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.95);
+  padding: 20px 30px;
+  border-radius: 10px;
+  text-align: center;
+  width: 50%;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  color: #2d4739; /* Dark green */
+  font-weight: bold;
+}
+
+.hero-overlay h1 {
+  font-size: 38px;
+  font-weight: bold;
+  color: #2d4739;
+}
+
+.hero-overlay p {
+  font-size: 18px;
+  font-weight: 500;
+  color: #5a3838;
+}
+
+/* Section Wrapper */
+.section-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 85%;
+  max-width: 1100px;
+  margin: 50px auto;
+  gap: 30px;
+}
+
+/* Section Text Box */
+.section {
+  flex: 1;
+  padding: 30px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  line-height: 1.6;
+  color: #2d4739;
+  border: 2px solid #ff8f5e; /* Soft orange border */
+}
+
+/* Section Image */
+.section-image {
+  width: 45%;
+  max-width: 350px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Alternate Layout */
+.section-wrapper:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+/* Registered License Box (No Image) */
+.registration-box {
+  width: 85%;
+  max-width: 1100px;
+  padding: 30px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  line-height: 1.6;
+  color: #2d4739;
+  border: 2px solid #ff8f5e;
+  margin: 50px auto;
+}
+
+/* Call to Action */
+.cta-section {
+  text-align: center;
+  margin: 60px 0;
+}
+
+.cta-button {
+  display: inline-block;
+  background: #ff8f5e;
+  color: white;
+  padding: 14px 24px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+  background: #e0784a;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .section-wrapper {
+      flex-direction: column;
+      text-align: center;
   }
-  
-  /* Hero Section */
-  .hero-section {
-    position: relative;
-    width: 100%;
-    height: 400px;
-    overflow: hidden;
+
+  .section {
+      width: 100%;
   }
-  
-  .hero-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
+
+  .section-image {
+      width: 80%;
   }
-  
+
   .hero-overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: rgba(255, 255, 255, 0.95);
-    padding: 25px 50px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+      width: 75%;
+      padding: 15px;
   }
-  
-  .intro-section, .mission-section, .services-section, .registration-section {
-    padding: 50px 20px;
+
+  .hero-overlay h1 {
+      font-size: 28px;
   }
-  
-  /* Content Box */
-  .content-box {
-    background: #F5E6D0;
-    padding: 20px;
-    border-radius: 10px;
-    font-size: 1.1rem;
-    font-weight: 500;
+
+  .hero-overlay p {
+      font-size: 16px;
   }
-  
-  /* Services Section */
-  .services-grid {
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    margin-top: 30px;
-  }
-  
-  .service-card {
-    background: linear-gradient(to bottom, #4F6F52, #3B5A40);
-    color: white;
-    padding: 25px;
-    border-radius: 12px;
-    width: 270px;
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
-    transition: transform 0.2s ease-in-out;
-  }
-  
-  .service-card:hover {
-    transform: scale(1.05);
-  }
-  
-  .service-card h3 {
-    font-size: 1.3rem;
-    margin-bottom: 10px;
-  }
-  
-  /* Registration Section */
-  .registration-section {
-    font-size: 1.2rem;
-    background: #F6F2E8;
-    padding: 25px;
-    border-radius: 10px;
-    margin-top: 40px;
-  }
-  
-  /* CTA Section */
-  .cta-section {
-    margin-top: 50px;
-  }
-  
-  .cta-button {
-    background: #E07A5F;
-    color: white;
-    padding: 15px 30px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-size: 1.2rem;
-    font-weight: bold;
-    transition: background 0.2s ease-in-out;
-  }
-  
-  .cta-button:hover {
-    background: #C9644B;
-  }
+}
