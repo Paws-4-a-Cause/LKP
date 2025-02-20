@@ -1,7 +1,7 @@
-import "./AboutLKP.css";
+import "./Home.css";
 import { Link } from "react-router-dom";
 
-const AboutLKP = () => {
+const Home = () => {
   return (
     <div className="home-container">
       <div className="navbar-placeholder"></div> {/* Placeholder for navbar */}
@@ -44,5 +44,5 @@ const AboutLKP = () => {
   );
 };
 
-export default AboutLKP;
+export default Home;
 

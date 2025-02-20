@@ -3,7 +3,7 @@
 // import viteLogo from "/vite.svg";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar"; // Import Navbar
-import AboutLKP from "./pages/AboutLKP";
+import AboutLKP from "./pages/Home";
 import AdoptionGallery from "./pages/AdoptionGallery";
 import Donate from "./pages/Donate";
 import InKindDonations from "./pages/InKindDonations";
