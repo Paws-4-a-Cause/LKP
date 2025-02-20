@@ -30,13 +30,13 @@ const MenuBar = () => {
         </div>
         <div className = "menu-items">
         <MenubarMenu>
-            <MenubarTrigger>
+            <MenubarTrigger className = "text">
                 <Link to ="/">About LKP</Link>
             </MenubarTrigger>
         </MenubarMenu>
 
         <MenubarMenu>
-            <MenubarTrigger>Our Cats</MenubarTrigger>
+            <MenubarTrigger className = "text">Our Cats</MenubarTrigger>
             <MenubarContent>
             <MenubarItem>
                 <Link to="/resident-cats">Resident Cats</Link>
@@ -48,7 +48,7 @@ const MenuBar = () => {
         </MenubarMenu>
 
       <MenubarMenu>
-        <MenubarTrigger>Support Us</MenubarTrigger>
+        <MenubarTrigger className = "text">Support Us</MenubarTrigger>
         <MenubarContent>
           <MenubarItem>
             <Link to="/donate">Donate</Link>
@@ -62,13 +62,13 @@ const MenuBar = () => {
         </MenubarContent>
       </MenubarMenu>
       <MenubarMenu>
-        <MenubarTrigger>
+        <MenubarTrigger className = "text">
             <Link to ="/cat-therapy">Cat Therapy</Link>
         </MenubarTrigger>
       </MenubarMenu>
 
       <MenubarMenu>
-        <MenubarTrigger>Join Us</MenubarTrigger>
+        <MenubarTrigger className = "text" >Join Us</MenubarTrigger>
         <MenubarContent>
           <MenubarItem>
             <Link to="/volunteer-opportunities">Volunteer Opportunities</Link>
@@ -77,7 +77,7 @@ const MenuBar = () => {
       </MenubarMenu>
 
       <MenubarMenu>
-        <MenubarTrigger>
+        <MenubarTrigger className = "text">
             <Link to ="/for-cat-rescuers">For Cat Rescuers</Link>
         </MenubarTrigger>
       </MenubarMenu>

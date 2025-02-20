@@ -30,3 +30,6 @@
     display: flex;
     gap: 20px;
 }
+ .text {
+    font-size: 15px;
+ }
