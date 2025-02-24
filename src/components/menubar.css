@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+.heading {
+    font-family: 'Chewy', cursive;
+    font-size: 40px;
+    padding-top: 5px;
+}
+.menubar {
+    display: flex;         
+    justify-content: space-between;
+    align-items: center;    
+    height: 100px;
+    background-color: #f57d2f;
+    color: #fbf6f0;
+    padding: 20px 20px;        
+}
+.logo-img {
+    width: 70px;  
+    height: 70px;  
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover;  /* Ensures the image fills the circle properly */
+    
+}
+
+.menu-items {
+    display: flex;  
+    gap: 20px;  /* Adds spacing between menu items */
+}
+
+.heading-logo {
+    display: flex;
+    gap: 20px;
+}
+ .text {
+    font-size: 15px;
+ }
