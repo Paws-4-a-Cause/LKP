@@ -1,0 +1,57 @@
+[
+    {
+      "name": "Kitty Bon Bon",
+      "slug": "kitty-bon-bon",
+      "age": 7,
+      "sex": "Female",
+      "FIV_status": "Positive",
+      "likes": ["Shoes", "Men", "Sunpatches", "Laps"],
+      "dislikes": ["Stress"],
+      "colour": "#da2f21",
+      "bio": "Kitty Bon Bon, better known as KBB, is a gentle cat who loves head rubs. She can most likely be found lounging by a window, with the sunlight streaming in on her fur. She was brought in due to dental issues, specifically gingivostomatitis (i.e. chronic inflammation of her mouth and gums). As a result, her teeth were removed! Additionally, KBB has allergies to collodial silver, and can overgroom when stressed. Even though she has seen her fair share of medical procedures, her condition has improved by leaps and bounds! Today, she is a very content cat, who is the serene boss of the cattery. KBB is quite quirky - she loves smelling the shoes of the volunteers, and also has a preference for guys... But don’t be deterred, she is plenty sweet to everyone that comes into the cattery!"
+    },
+    {
+      "name": "Coconut",
+      "slug": "Coconut",
+      "age": 12,
+      "sex": "Female",
+      "FIV_status": "Positive",
+      "likes": ["Fish", "Heated blankets", "Ciao"],
+      "dislikes": ["Getting picked up"],
+      "colour": "#9bb1ff",
+      "bio": "Coconut is one of our older cats who stays in her own lane, flourishing. She was brought into LKP for recovery after her dental surgery, and has recuperated well, becoming a content indoor cat. In the cattery, she enjoys lounging in on her table, fitted with her comfy bed, and her heated blanket. When she is hungry or wants attention, she emerges and meows, sitting expectantly at the kitchen counter. As she ages gracefully, we adjust our care for her according to her needs. She has the beginnings of Chronic Kidney Disease, as well as arthritis in her back legs. She also occasionally gets congested! She gets daily subcutaenous fluids, heat therapy, and nebulisation when needed. Coconut is a smart cookie though, and has what we call ‘tortie-tude’. When she is displeased with us during medical procudures, she makes it known with her yowls. But luckily her bark is worse than her bite - she has no teeth!"
+    },
+    {
+      "name": "Benny",
+      "slug": "Benny",
+      "age": 10,
+      "sex": "Male",
+      "FIV_status": "Positive",
+      "likes": ["Wet food", "freeze-dried chunks", "headrubs"],
+      "dislikes": ["Kibble"],
+      "colour": "#f7c400",
+      "bio": "Benny is our latest admission. He has since joined the other cats outside out his personal suite. Benny is very sweet and loving! He likes receiving headrubs and neck scratches. He also loves to eat: on his first night in the cattery, he helped to clean up the uneaten dinners from 2 other pickier cats! Benny was a community cat that was admitted when his feeder noticed a large degloving wound on his arm. Given his FIV+ status, the wound will take longer to heal, but Benny recieves daily cleaning to ensure that the wound does not get infected. Soft e-collars help keep Benny comfortable and prevents him from licking the wound. Thankfully, his wound has been shrinking in size ever since his admission. With his floppy ears, Benny has already won the hearts of many of us here at LKP. We can’t wait for him to recover so he can live his best life, pain-free."
+    },
+    {
+      "name": "Ah Girl",
+      "slug": "Ah Girl",
+      "age": 13,
+      "sex": "Female",
+      "FIV_status": "Negative",
+      "likes": ["Ah Boy", "catnaps", "wet food"],
+      "dislikes": ["New people", "her beds being", "usurped"],
+      "colour": "#f3c1f3",
+      "bio": "Ah Girl is your typical old auntie. She likes her own space, and loves her peace and quiet. Literally, because she is deaf! When the cattery was under - going minor construction, she was the only cat unbothered by the noise. You can most often find Ah Girl sleeping, or re-locating to find another space to continue sleeping. She doesn’t bother other cats, but is irritated when they bother her. The only cat she likes is Ah Boy, her ‘husband’. In fact, her rescuer’s advice was to first pet Ah Boy before petting Ah Girl, because Ah Girl will be more relaxed with the familiar smell! It took a while for Ah Girl to open up after coming to LKP, but after she settled in, she started showing her signature unusual sleeping positions! She has The Shrimp, The Seal, and the Upside-Down Head. Unlike Ah Boy, Ah Girl prefers wet food over kibble, but has a tendency to eat too fast, causing her to throw up occasionally. Otherwise, she is as healthy as an elderly cat can be, and we are delighted to have her as a palliative cat under our care."
+    },
+    {
+      "name": "Ah Boy",
+      "slug": "Ah Boy",
+      "age": 13,
+      "sex": "Male",
+      "FIV_status": "Positive",
+      "likes": ["Wet food", "dry food", "sitting in litterboxes", "Ah Girl"],
+      "dislikes": ["Getting disturbed in his mancave"],
+      "colour": "#0f8d61 ",
+      "bio": "Ah Boy is our resident chonk! He can be recognised from his kinked tail and his wobbly gait due to his weak hind legs. He has a spacey, gonggong look on his face most of the time, but his gaze sharpens up during mealtimes! Ah Boy is the most docile of the cats, and enjoys even the most vigorous of pets. Ah Boy was rescued along with his ‘wife’, Ah Girl. When he was first admitted, he had a puncture wound on his face that ran through his entire cheek. But he never shyed away during wound cleanings, and barely protested. The wound closed up quickly, and now you can hardly tell where the wound was on his handsome face. Today, Ah Boy enjoys retirement indoors, and is certainly an old man with many funny habits. He comes hobbling over whenever he hears the rattling of kibble. He used to like sleeping in litterboxes, but has since learnt the luxury of pillows. He also loves vacuuming up any leftovers of the other cats! The only time he ever hisses at us is when he is lounging a cubby hole that we have dubbed his mancave."
+    }
+  ]
