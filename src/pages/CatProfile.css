@@ -1,0 +1,130 @@
+/* Make the profile take up the entire page */
+.cat-profile {
+    display: flex;
+    height: 100vh;
+    font-family: "Arial", sans-serif;
+    overflow: hidden; /* Prevents scrolling */
+  }
+  
+  /* Split the Profile into Two Equal Halves */
+  .profile-left, .profile-right {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+  }
+  
+  /* Left Side - Background Color & Paws Image */
+.profile-left {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px;
+  color: white;
+  position: relative; /* Allows absolute positioning inside */
+  
+}
+.profile-left::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 500px;
+  height: 500px;
+  background-image: url("/src/assets/paws.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  filter: grayscale(100%) brightness(80%); /* Makes it grey */
+  opacity: 0.3; /* Adjust transparency */
+  z-index: 1;
+}
+
+
+/* Ensure the text is on top of the background */
+.profile-left h1 {
+  font-style: italic;
+    color: rgb(19, 18, 18);
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 1.6;
+    max-width: 500px;
+}
+.profile-left p {
+  position: relative;
+  z-index: 2; /* Puts text above the background */
+}
+  
+  .bio {
+    font-style: italic;
+    color: rgb(37, 36, 36);
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 500px;
+  }
+  
+/* Right Side - Background Image */
+.profile-right {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 40px;
+  width: 50%;
+  height: 100vh;
+}
+
+
+
+/* Details box above the overlay */
+.details-box {
+  position: relative;
+  z-index: 2;
+  background: rgba(255, 245, 230, 0.9);
+  padding: 30px;
+  border-radius: 10px;
+  text-align: left;
+  border: 2px solid #fe7301;
+  width: 80%;
+  max-width: 320px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.details-box p {
+  margin: 12px 0;
+  font-size: 16px;
+  color: #444;
+}
+  
+  /* Back Button */
+  .back-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background: #fe7301;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .back-button:hover {
+    background: #f49965;
+  }
+  
+  
+  
+
+  
+  
