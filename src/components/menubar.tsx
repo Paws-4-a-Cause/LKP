@@ -19,7 +19,7 @@ const MenuBar = () => {
         <Menubar className="menubar">
             <div className="heading-logo">
                 <img src={profilePic} alt="Logo" className="logo-img" />
-                <h1 className="heading">Love Kuching Project</h1>
+                <h1 className="heading"></h1>
             </div>
             <div className="menu-items">
                 <MenubarMenu>

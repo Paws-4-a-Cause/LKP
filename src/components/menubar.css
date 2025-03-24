@@ -4,6 +4,27 @@
     font-size: 40px;
     padding-top: 5px;
 }
+
+@media (max-width: 1196px) {
+    .heading::after {
+        content: "LKP";
+    }
+    .heading {
+        font-size: 40px; /* Optional: Adjust font size for smaller screens */
+    }
+}
+@media (max-width: 856px) {
+    .heading {
+        display: none;
+    }
+}
+
+@media (min-width: 1197px) {
+    .heading::after {
+        content: "Love Kuching Project";
+    }
+}
+
 /* Ensure the menubar itself is positioned correctly */
 .menubar {
     position:fixed;
