@@ -4,15 +4,26 @@
     font-size: 40px;
     padding-top: 5px;
 }
+/* Ensure the menubar itself is positioned correctly */
 .menubar {
-    display: flex;         
-    justify-content: space-between;
-    align-items: center;    
+    position:fixed;
+    z-index: 1000000000;
+    top: 0;
+    left: 0;
+    width: 100%;
     height: 100px;
     background-color: #f57d2f;
-    color: #fbf6f0;
-    padding: 20px 20px;        
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+     /* Ensure it's above other elements but below dropdown */
 }
+div[data-radix-menu-content] {
+    z-index: 100000000000;
+}
+
 .logo-img {
     width: 70px;  
     height: 70px;  
@@ -24,6 +35,7 @@
 .menu-items {
     display: flex;  
     gap: 20px;  /* Adds spacing between menu items */
+    z-index: 1100;
 }
 
 .heading-logo {
