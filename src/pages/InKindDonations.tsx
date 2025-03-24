@@ -1,66 +1,77 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import "./InKindDonations.css"; // Assuming you have the relevant CSS file
+// InKindDonations.tsx
+import React from 'react';
+import './InKindDonations.css';
+import ReinLogo from '../assets/collaborating company logos/Rein Logo.png';
+import PolypetLogo from '../assets/collaborating company logos/Polypet Logo.avif';
+import PetMartLogo from '../assets/collaborating company logos/PetMart Logo.jpg';
 
-const InKindDonations = () => {
+
+const InKindDonations: React.FC = () => {
   return (
-    <div className="in-kind-donations-container">
-      <h1>In-Kind Donations</h1>
-      <p className="description">
-        Support us by donating products from our wish list. Your generous
-        contributions help us provide the best care for our cats.
+    <section className="collaborators-section">
+      <h2 className="collaborators-title">🐾 <strong>In-Kind Donations</strong> 🐾</h2>
+      <p className="collaborators-description">
+        Support us by donating products from our wish list. Your generous contributions help us
+        provide the best care for our cats.
       </p>
 
-      <h2>Our Collaborating Companies</h2>
-      <div className="company-logos">
-        {/* Placeholder for Rein Biotech */}
-        <div className="company">
-          <img
-            src="https://via.placeholder.com/150"
-            alt="Rein Biotech Logo"
-            className="company-logo"
-          />
-          <p className="company-description">
-            Rein Biotech: A company focused on biotechnology solutions to improve
-            pet health and wellness.
+      <h3 className="collaborators-subtitle">Our Collaborating Companies</h3>
+
+      <div className="collaborators-container">
+        <div className="collaborator-card">
+          <img src={ReinLogo} alt="Rein Biotech Logo" className="collaborator-logo" />
+          <p className="collaborator-name">Rein Biotech</p>
+          <p className="collaborator-description">
+            A company focused on biotechnology solutions to improve pet health and wellness.
           </p>
+          <a
+            className="collaborator-button"
+            href="https://reinbiotech.com/contribute-to-shelters/love-kuching-project/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Visit Website
+          </a>
         </div>
 
-        {/* Placeholder for Polypet */}
-        <div className="company">
-          <img
-            src="https://via.placeholder.com/150"
-            alt="Polypet Logo"
-            className="company-logo"
-          />
-          <p className="company-description">
-            Polypet: Leading supplier of quality pet products that help improve
-            the lives of pets and their owners.
+        <div className="collaborator-card">
+          <img src={PolypetLogo} alt="Polypet Logo" className="collaborator-logo" />
+          <p className="collaborator-name">Polypet</p>
+          <p className="collaborator-description">
+            Leading supplier of quality pet products that help improve the lives of pets and their owners.
           </p>
+          <a
+            className="collaborator-button"
+            href="https://www.polypet.com.sg/collections/donate-to-love-kuching-proj"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Visit Website
+          </a>
         </div>
 
-        {/* Placeholder for Petmart */}
-        <div className="company">
-          <img
-            src="https://via.placeholder.com/150"
-            alt="Petmart Logo"
-            className="company-logo"
-          />
-          <p className="company-description">
-            Petmart: Retailer of pet food and accessories, dedicated to providing
-            quality products for pets.
+        <div className="collaborator-card">
+          <img src={PetMartLogo} alt="Petmart Logo" className="collaborator-logo" />
+          <p className="collaborator-name">Petmart</p>
+          <p className="collaborator-description">
+            Retailer of pet food and accessories, dedicated to providing quality products for pets.
           </p>
+          <a
+            className="collaborator-button"
+            href="https://apetmart.com/product/love-kuching-project-donation-wishlist/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Visit Website
+          </a>
         </div>
       </div>
-
-      <Link to="/donate" className="cta-button">
-        Make a Difference
-      </Link>
-    </div>
+    </section>
   );
 };
 
 export default InKindDonations;
+
 
 
 

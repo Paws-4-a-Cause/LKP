@@ -1,11 +1,17 @@
 import "./About.css";
+import ThreeCats from '../assets/placeholder pictures/ThreeCats.jpg';
+import AhBoy from '../assets/cats/Ah Boy.jpg';
+import AhGirl from '../assets/cats/Ah Girl.jpg';
+import KittyBonBon from '../assets/cats/kitty-bon-bon.jpg';
+
+
 
 const About = () => {
   return (
     <div className="about-container">
       {/* Hero Section - Full Width */}
       <section className="hero-section">
-        <img src="/images/cats.jpg" alt="Cats looking up" className="hero-image" />
+        <img src={ThreeCats} alt="Cats" className="hero-image" />
         <div className="hero-overlay">
           <h1>About Love Kuching Project</h1>
           <p>Caring for cats, building communities</p>
@@ -21,7 +27,7 @@ const About = () => {
             Today, we have our own shelter space and continue to be entirely volunteer-run.
           </p>
         </div>
-        <img src="/images/Cat1.jpg" alt="White Cat Sleeping" className="section-image" />
+        <img src={AhBoy} alt="Ah Boy" className="section-image" />
       </div>
 
       {/* Our Mission */}
@@ -33,7 +39,7 @@ const About = () => {
             as well as neonatal care for young kittens.
           </p>
         </div>
-        <img src="/images/Cat2.jpg" alt="Tabby Cat Hugging Plush" className="section-image" />
+        <img src={AhGirl} alt="Ah Girl" className="section-image" />
       </div>
 
       {/* What We Do */}
@@ -47,7 +53,7 @@ const About = () => {
             <li>📢 Community Engagement – Educating and involving the community in feline welfare.</li>
           </ul>
         </div>
-        <img src="/images/Cat1.jpg" alt="Cat Care Activities" className="section-image" />
+        <img src={KittyBonBon} alt="Kitty Bon Bon" className="section-image" />
       </div>
 
       {/* Registered Organization (No Image) */}
