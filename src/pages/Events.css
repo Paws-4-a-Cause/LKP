@@ -69,9 +69,9 @@
   /* Event heading */
   .event-heading {
     font-family: 'Chewy', cursive;
-    font-size: 1.8rem;
+    font-size: 2.5rem;
     font-weight: bold;
-    color: #f57d2f;
+    color: #078C64;
     margin-bottom: 30px;
   }
   
@@ -89,7 +89,7 @@
   .register-button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #4a7552;
+    background-color: #078C64;
     color: white;
     text-decoration: none;
     font-weight: bold;
@@ -101,7 +101,7 @@
   }
   
   .register-button:hover {
-    background-color: #38593e;
+    background-color: #056a4c;
   }
 
 
