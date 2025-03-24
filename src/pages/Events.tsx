@@ -20,7 +20,6 @@ const imageMap: { [key: string]: string } = {
 const Events = () => {
   return (
     <div className="events-page">
-      <h1 className="heading-events">Our FAKE Events</h1>
       <div className="carousel-container">
         <Carousel className="carousel">
           <CarouselContent>
