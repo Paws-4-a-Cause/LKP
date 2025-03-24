@@ -5,7 +5,7 @@
 .heading-events {
     margin-top: 100px;
     margin-bottom: 30px;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     padding-top: 30px;
     color:#4a7552;
     text-align: center;
@@ -68,10 +68,9 @@
   
   /* Event heading */
   .event-heading {
-    font-family: 'Chewy', cursive;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: bold;
-    color: #078C64;
+    color: #056a4c;
     margin-bottom: 30px;
   }
   
@@ -89,7 +88,7 @@
   .register-button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #078C64;
+    background-color: #056a4c;
     color: white;
     text-decoration: none;
     font-weight: bold;
@@ -101,7 +100,7 @@
   }
   
   .register-button:hover {
-    background-color: #056a4c;
+    background-color: #04513a;
   }
 
 
