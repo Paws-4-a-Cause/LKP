@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/menubar";
 import { Link } from "react-router-dom";
 import "./menubar.css";
-import profilePic from "../assets/LKPLogo.jpg";
+import profilePic from "../assets/LKPLogo.png";
 
 // Import cats data from JSON file
 import cats from "../data/cats.json";

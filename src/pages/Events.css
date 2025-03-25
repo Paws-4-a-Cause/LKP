@@ -1,4 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Chewy&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,463;1,463&display=swap');
+* {
+font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+
+}
 .events-page {
   background-color: #ffeee0;
 }
@@ -55,6 +62,7 @@
 }
 
 .event-description {
+  background-color: transparent;
   text-align: center;
   width: 80%;
   border-radius: 10px;
@@ -76,7 +84,7 @@
   
   /* Event description text */
   .event-details {
-    width: 50%;
+    width: 60%;
     font-size: 1rem;
     font-weight: normal;
     color: #4a4a4a;
@@ -134,7 +142,7 @@
 
 .carousel-item img {
   width: auto;  /* Maintain aspect ratio */
-  height: 630px; /* Adjust based on `image2` height */
+  height: auto; /* Adjust based on `image2` height */
   object-fit: cover; /* Ensures consistent cropping */
   border-radius: 10px; /* Optional: keeps rounded edges */
 }

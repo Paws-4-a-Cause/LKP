@@ -1,27 +1,47 @@
-@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@font-face {
+    font-family: 'Le Petit Cochon';
+    src: url('../assets/fonts/le-petit-cochon.woff2') format('woff2'), /* Best format */
+         url('../assets/fonts/le-petit-cochon.ttf') format('truetype'), /* TTF fallback */
+         url('../assets/fonts/le-petit-cochon.otf') format('opentype'); /* OTF fallback */
+    font-weight: normal;
+    font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,463;1,463&display=swap');
+* {
+font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+
+}
 .heading {
-    font-family: 'Chewy', cursive;
-    font-size: 40px;
-    padding-top: 5px;
+    font-family: 'Le Petit Cochon', cursive;
+    font-size: 50px;
+    padding-top: 10px;
 }
 
-@media (max-width: 1196px) {
+@media (max-width: 1260px) {
     .heading::after {
+       
         content: "LKP";
     }
     .heading {
-        font-size: 40px; /* Optional: Adjust font size for smaller screens */
+        padding-top:20px;
+        font-size: 45px; /* Optional: Adjust font size for smaller screens */
     }
 }
 @media (max-width: 856px) {
     .heading {
         display: none;
     }
+    .logo-img {
+        display: none;
+    }
+
 }
 
-@media (min-width: 1197px) {
+@media (min-width: 1261px) {
     .heading::after {
-        content: "Love Kuching Project";
+        content: "love kuching project";
     }
 }
 
@@ -39,6 +59,8 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    border: 0px;
+    border-radius: 0px;
      /* Ensure it's above other elements but below dropdown */
 }
 div[data-radix-menu-content] {
@@ -46,9 +68,9 @@ div[data-radix-menu-content] {
 }
 
 .logo-img {
-    width: 70px;  
-    height: 70px;  
-    border-radius: 50%; /* Makes the image circular */
+    padding-top:0px;
+    width: 90px;  
+    height: 90px;  
     object-fit: cover;  /* Ensures the image fills the circle properly */
     
 }
