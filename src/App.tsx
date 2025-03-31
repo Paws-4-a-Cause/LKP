@@ -13,7 +13,7 @@ import CatProfile from "./pages/CatProfile";
 
 const App = () => {
   return (
-    <Router basename="/LKP/">
+    <Router >
       <MenuBar /> {/* Display the Navbar at the top */}
 
       <Routes>

@@ -10,7 +10,7 @@ const About = () => {
       <section className="hero-section">
         <img src={ThreeCats} alt="Cats" className="hero-image" />
         <div className="hero-overlay">
-          <h1>About Love Kuching Project</h1>
+          <h1>LOVE KUCHING PROJECT</h1>
           <p>Caring for cats, building communities</p>
         </div>
       </section>
