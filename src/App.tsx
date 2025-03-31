@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import MenuBar from "./components/menubar.tsx";
 import Home from "./pages/Home";
