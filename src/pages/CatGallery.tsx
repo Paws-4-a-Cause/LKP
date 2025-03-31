@@ -1,9 +1,10 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import cats from "../data/cats.json"; // Import cat data
 import "./CatGallery.css"; // Import CSS file
 import { Button } from "@/components/ui/button";
 
 export default function CatGallery() {
+  const navigate = useNavigate();
   return (
     <div className="cat-gallery">
       <div className="cat-gallery-header">
@@ -28,7 +29,9 @@ and medical care for their chosen cats.
     // Get correct paths for images
     const catImage = new URL(`../assets/cats/${cat.slug}.jpg`, import.meta.url).href;
     return (
-      <div key={cat.slug} className="cat-card">
+      <div key={cat.slug} className="cat-card" 
+      onClick={() => navigate(`/cats/${cat.slug}`)}
+      style={{ cursor: "pointer" }}>
         <img src={catImage} alt={cat.name} className="cat-image" />
         <h3>{cat.name}</h3>
         {/* <Link to={`/cats/${cat.slug}`} className="cat-link">View Profile</Link> */}

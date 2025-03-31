@@ -2,7 +2,6 @@ import "./About.css";
 import ThreeCats from "../assets/placeholder pictures/ThreeCats.jpg";
 import AhBoy from "../assets/cats/Ah Boy.jpg";
 import AhGirl from "../assets/cats/Ah Girl.jpg";
-import KittyBonBon from "../assets/cats/kitty-bon-bon.jpg";
 
 const About = () => {
   return (

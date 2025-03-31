@@ -61,6 +61,7 @@
     font-weight: bold;
     background-color: white;
     border-radius: 0 0 8px 8px;
+    transition: transform 0.3s ease;
   }
   
   .cat-link {
@@ -73,9 +74,9 @@
     display: inline-block;
     transition: 0.3s;
   }
-  
-  .cat-link:hover {
-    background: #ef7973;
+
+  .cat-card:hover {
+    transform: translateY(-5px);
   }
 
   
