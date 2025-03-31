@@ -21,9 +21,17 @@ const MenuBar = () => {
                 <h1 className="heading">Love Kuching Project</h1>
             </div>
             <div className="menu-items">
+                {/* Home Link */}
                 <MenubarMenu>
                     <MenubarTrigger className="text">
-                        <Link to="/">About LKP</Link>
+                        <Link to="/">Home</Link> {/* Link to Home page */}
+                    </MenubarTrigger>
+                </MenubarMenu>
+
+                {/* About Link */}
+                <MenubarMenu>
+                    <MenubarTrigger className="text">
+                        <Link to="/about">About LKP</Link> {/* Link to About page */}
                     </MenubarTrigger>
                 </MenubarMenu>
 
@@ -33,7 +41,6 @@ const MenuBar = () => {
                     </MenubarTrigger>
 
                     <MenubarContent>
-                        {/* Dynamically create menu items for each cat */}
                         {cats.map((cat) => (
                             <MenubarItem key={cat.slug}>
                                 <Link to={`/cats/${cat.slug}`}>{cat.name}</Link>
@@ -83,3 +90,4 @@ const MenuBar = () => {
 };
 
 export default MenuBar;
+
