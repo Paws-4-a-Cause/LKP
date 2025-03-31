@@ -29,6 +29,8 @@
 .cat-gallery {
     text-align: center;
     padding-top: 6rem;
+    background-color: #FFFBE2;
+    min-height: 100vh;
 
   }
 
@@ -42,7 +44,7 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 50px;
-    background-color: #FFFBE2;
+  
   }
   
   .cat-card {
