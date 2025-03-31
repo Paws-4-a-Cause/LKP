@@ -1,12 +1,13 @@
 .donate-container {
     padding: 1.5rem;
     width: 100%;
-    margin: 0 auto;
+    margin: 0;
     background-color: #ffeee0;
     min-height: 100vh;
   }
   
   .donate-title {
+    margin-top:100px;
     font-size: 2.5rem;
     font-weight: bold;
     text-align: center;
@@ -19,7 +20,7 @@
     padding: 1.5rem;
     border-radius: 0.5rem;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    border: 2px solid #ff735c;
+    border: 2px solid #f57d2f;
     margin-top: 2rem;
   }
   
@@ -55,12 +56,12 @@
   .contact-form input:focus,
   .contact-form textarea:focus {
     outline: none;
-    border-color: #ff735c;
+    border-color: #f57d2f;
   }
   
   .donate-button {
     width: 100%;
-    background-color: #ff735c;
+    background-color: #f57d2f;
     color: white;
     padding: 0.75rem;
     border-radius: 0.5rem;
@@ -71,7 +72,7 @@
   }
   
   .donate-button:hover {
-    background-color: #e65b49;
+    background-color: #d45a0a;
   }
   
   .qr-code {
@@ -83,7 +84,7 @@
   
   .qr-code img {
     width: 10rem;
-    border: 2px solid #ff735c;
+    border: 2px solid #f57d2f;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   }
   

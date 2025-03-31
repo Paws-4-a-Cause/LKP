@@ -1,0 +1,51 @@
+[
+    {
+      "slug": "paws-relax",
+      "name": "🐾 Paws & Relax: Cat Therapy Day 🐾",
+      "date": "Sunday, August 18, 2024",
+      "time": "2:00 PM – 5:00 PM",
+      "location": "Furry Haven Cat Café, 12 Whisker Lane, Singapore",
+      "description": "Feeling stressed? Take a break and unwind with our adorable therapy cats! 🐱💆‍♀️",
+      "whatToExpect": [
+        "Guided mindfulness & breathing exercises 🧘‍♂️",
+        "Cuddle sessions with rescue cats",
+        "Interactive talk on ‘The Science of Purring’",
+        "Light refreshments & herbal tea bar"
+      ],
+      "image": "event1_image.jpg",
+      "cta": "<strong>Limited slots available!</strong> <a href='#'>Register now</a> to secure your spot."
+    },
+    {
+      "slug": "paint-with-cats",
+      "name": "🎨 Paint with Cats: Creative Art Session 🖌️",
+      "date": "Saturday, September 7, 2024",
+      "time": "3:00 PM – 6:00 PM",
+      "location": "Cozy Whiskers Art Studio, Singapore",
+      "description": "Unleash your inner artist alongside adorable feline companions! 🖌️🐱",
+      "whatToExpect": [
+        "Guided painting session with an experienced art instructor",
+        "Cats roaming around while you create your masterpiece",
+        "Special paw print stamping activity for cat-themed art",
+        "Complimentary drinks & snacks for a cozy creative experience"
+      ],
+      "image": "event2_image.jpg",
+      "cta": "<strong>Join us for a purr-fectly creative day!</strong> <a href='#'>Sign up here</a>."
+    },
+    {
+      "slug": "cat-care-101",
+      "name": "🐱 Cat Care 101: Learn to Foster & Rescue! 🏡",
+      "date": "Sunday, September 22, 2024",
+      "time": "1:00 PM – 4:30 PM",
+      "location": "Community Animal Welfare Center, Singapore",
+      "description": "Always wanted to help stray cats but don’t know how? Join our hands-on workshop to learn the basics of cat rescue, fostering, and care! 🐱🏡",
+      "whatToExpect": [
+        "How to safely rescue and handle stray cats",
+        "Essential foster care skills: feeding, medical aid & socialization",
+        "Learn from veterinarians and experienced fosterers",
+        "Meet adorable rescue kittens looking for homes!"
+      ],
+      "image": "event3_image.jpeg",
+      "cta": "<strong>Make a difference today!</strong> <a href='#'>Reserve your seat</a>."
+    }
+  ]
+  

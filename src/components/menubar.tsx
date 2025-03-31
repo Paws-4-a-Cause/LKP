@@ -1,3 +1,4 @@
+
 import React from "react";
 import {
     Menubar,
@@ -8,7 +9,7 @@ import {
 } from "@/components/ui/menubar";
 import { Link } from "react-router-dom";
 import "./menubar.css";
-import profilePic from "../assets/LKPLogo.jpg";
+import profilePic from "../assets/LKPLogo.png";
 
 // Import cats data from JSON file
 import cats from "../data/cats.json";
@@ -18,7 +19,7 @@ const MenuBar = () => {
         <Menubar className="menubar">
             <div className="heading-logo">
                 <img src={profilePic} alt="Logo" className="logo-img" />
-                <h1 className="heading">Love Kuching Project</h1>
+                <h1 className="heading"></h1>
             </div>
             <div className="menu-items">
                 {/* Home Link */}
