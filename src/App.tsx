@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import MenuBar from "./components/menubar.tsx";
 import Home from "./pages/Home";
 import AboutLKP from "./pages/AboutLKP";
@@ -14,7 +13,7 @@ import CatProfile from "./pages/CatProfile";
 
 const App = () => {
   return (
-    <Router>
+    <Router >
       <MenuBar /> {/* Display the Navbar at the top */}
 
       <Routes>

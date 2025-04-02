@@ -1,7 +1,5 @@
 import { Link } from "react-router-dom";
 import "./Home.css";
-import LKPLogo from '../assets/LKPLogo.jpg';
-import ThreeCats from '../assets/placeholder pictures/ThreeCats.jpg';
 
 
 const Home = () => {
@@ -14,7 +12,7 @@ const Home = () => {
       <section className="hero-section">
       <div className="hero-background">
         <div className="hero-overlay">
-          <h1>Love Kuching Project</h1>
+          <h1>LOVE KUCHING PROJECT</h1>
           <p>Caring for cats, building communities</p>
           <Link to="/about" className="cta-button">Read More</Link>
         </div>

@@ -1,8 +1,7 @@
 /* InKindDonations.css */
 .collaborators-section {
   background-color: #fff5ee;
-  min-height: 100vh;
-  padding: 2rem 2rem 4rem;
+  padding: 5rem 2rem 4rem;
   text-align: center;
   display: flex;
   flex-direction: column;
