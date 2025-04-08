@@ -142,7 +142,7 @@ font-family: "Nunito", sans-serif;
 
 .carousel-item img {
   width: auto;  /* Maintain aspect ratio */
-  height: auto; /* Adjust based on `image2` height */
+  height: 500px; /* Adjust based on `image2` height */
   object-fit: cover; /* Ensures consistent cropping */
   border-radius: 10px; /* Optional: keeps rounded edges */
 }
