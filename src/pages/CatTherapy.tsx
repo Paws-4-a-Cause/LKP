@@ -6,7 +6,7 @@ const CatTherapy = () => {
     <div className="cat-therapy-container">
       <h1 className="cat-therapy-title">🐾 Cat Therapy: Relax with Our Adorable Cats 🐾</h1>
 
-      <div className="section">
+      <div className="cat-therapy-section">
         <h2>Unwind with Our Furry Friends</h2>
         <p>
           Feeling stressed? Take a break from your busy routine and relax with our
@@ -15,7 +15,7 @@ const CatTherapy = () => {
         </p>
       </div>
 
-      <div className="section">
+      <div className="cat-therapy-section">
         <h2>What We Offer</h2>
         <ul className="section-list">
           <li>Comfortable and cozy space for relaxation 🛋️</li>
@@ -25,7 +25,7 @@ const CatTherapy = () => {
         </ul>
       </div>
 
-      <div className="section">
+      <div className="cat-therapy-section">
         <h2>Our Mission</h2>
         <p>
           We believe in the healing power of animals. Through our Cat Therapy sessions,
@@ -35,7 +35,7 @@ const CatTherapy = () => {
         </p>
       </div>
 
-      <div className="section">
+      <div className="cat-therapy-section">
         <h2>Contact Us</h2>
         <p>Interested in booking a session? Reach out to us for more information.</p>
         <a href="mailto:contact@cattherapy.com" className="contact-button">📧 Get in Touch</a>
