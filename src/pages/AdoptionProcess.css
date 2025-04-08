@@ -1,0 +1,193 @@
+/* Container setup */
+.adoption-container {
+  padding: 1.5rem;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #ffeee0;
+  min-height: 100vh;
+}
+
+/* Title Styling */
+.adoption-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: #4a7552;
+  margin-bottom: 1rem;
+  font-family: 'Le Petit Cochon';
+}
+
+/* Section Styling */
+.adoption-section {
+  background-color: #fff8f2;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border: 2px solid #fe7301;
+  margin-top: 2rem;
+  background-image: url('../assets/cats/4_cats.jpg'); /* Set background image here */
+  background-size: cover; /* Ensure the image covers the entire section */
+  background-position: center top; /* Center the image */
+  background-repeat: no-repeat;
+}
+
+.adoption-section h2 {
+  font-size: 1.75rem;
+  font-weight: 900;
+  color: #4a7552;
+  text-align: center;
+  font-family: 'Le Petit Cochon';
+}
+
+.adoption-section p {
+  color: #555;
+  margin-top: 0.5rem;
+}
+
+/* Steps Styling */
+/* Step Cards Container Styling */
+.steps {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+/* Step Cards Styling */
+.step-card {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 2px solid #fe7301;
+  border-radius: 0.5rem;
+  margin-top: 2rem;
+  padding: 1rem;
+  width: 250px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  position: relative; /* Add position relative for arrows */
+}
+
+.step-card:hover {
+  transform: scale(1.1);
+}
+
+/* Create Bigger Arrow Pointing Right for Each Step Card */
+.step-card::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -50px; /* Move the arrow further out to the right */
+  border-top: 40px solid transparent;  /* Larger arrow size */
+  border-bottom: 40px solid transparent;
+  border-left: 40px solid #fe7301; /* Larger arrow size */
+  transform: translateY(-50%);
+}
+
+.step-card:last-child::after {
+  content: none; /* Remove arrow for last card */
+}
+
+/* Remove Left Arrow for the First Step Card */
+.step-card:first-child::before {
+  content: none; /* No arrow on the first card */
+}
+
+/* Hover Effects and Step Title Styling */
+.step-title {
+  font-family: 'Le Petit Cochon';
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #4a7552;
+  margin-bottom: 1rem;
+}
+
+
+.step-card p {
+  color: #444;
+  font-family: 'Nunito';
+  margin-bottom: 2rem;
+}
+
+/* Preparation Section */
+.preparation {
+    padding: 1.5rem;
+    margin-top: 2rem;
+    background-color: #fff8f2;
+    border-radius: 0.5rem;
+    border: 2px solid #fe7301;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    background-image: url('../assets/cats/cats_behind_door.jpg'); /* Set background image here */
+    background-size: cover; /* Ensure the image covers the entire section */
+    background-position: center center; /* Center the image */
+    background-repeat: no-repeat;
+  }
+  
+  .preparation h2 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #4a7552;
+    font-family: 'Le Petit Cochon';
+  }
+  
+  .preparation-card {
+    padding: 1.5rem;
+    margin-top: 1rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 0.5rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border: 2px solid #fe7301;
+    margin-left: 0;
+    width: 30%;
+  }
+  
+  .preparation-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #4a7552;
+  }
+  
+  ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  ul li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #444;
+    font-family: 'Nunito';
+  }
+  
+
+/* Button Styling for PDF */
+.pdf-button {
+    width: auto;
+    background-color: #fe7301;
+    color: white;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  .pdf-button:hover {
+    background-color: #f49965;
+  }
+  
+  /* Link Styling for LKP Social Media */
+  .social-link {
+    color: #f49965;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .social-link:hover {
+    text-decoration: underline;
+  }
+  
+
+  

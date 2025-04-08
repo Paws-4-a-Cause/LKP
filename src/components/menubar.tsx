@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import {
     Menubar,
     MenubarItem,
@@ -40,6 +40,12 @@ const MenuBar = () => {
                             </MenubarItem>
                         ))}
                     </MenubarContent>
+                </MenubarMenu>
+
+                <MenubarMenu>
+                    <MenubarTrigger className="text">
+                        <Link to="/adoption-process">Adoption Process</Link>
+                    </MenubarTrigger>
                 </MenubarMenu>
 
                 <MenubarMenu>

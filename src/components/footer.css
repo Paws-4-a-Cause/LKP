@@ -1,0 +1,62 @@
+/* Footer Styling */
+.footer {
+  background-color: #fe7301; /* Orange background */
+  color: #fff; /* White text */
+  padding: 10px 20px; /* Reduce padding for a smaller footer */
+  text-align: center; /* Center align the text */
+  position: static;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex; /* Use flexbox to position the elements */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Vertically center the items */
+  flex-direction: column; /* Stack the elements vertically */
+}
+
+.footer-logo-img {
+  width: 60px; /* Adjust logo size */
+  height: 60px; /* Ensure the height matches width for a circle */
+  border-radius: 50%; /* Make the image circular */
+  object-fit: cover; /* Ensures the image fills the circle properly */
+  margin-bottom: 10px; /* Add space below the logo */
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column; /* Stack the footer sections vertically */
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.footer-contact, .footer-social {
+  width: 100%; /* Ensure sections take full width */
+  margin: 5px 0; /* Small margin between sections */
+  text-align: center; /* Center align the content */
+}
+
+.footer-contact h3, .footer-social h3 {
+  font-size: 1rem; /* Reduced heading font size */
+  margin-bottom: 5px; /* Add space below the headings */
+  font-family: 'Le Petit Cochon';
+  font-weight: bold;
+}
+
+.footer-contact p, .footer-social a {
+  font-size: 0.9rem; /* Slightly smaller text size */
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-contact p a, .footer-social a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  margin-top: 5px;
+  font-size: 0.8rem; /* Smaller text size for copyright text */
+  color: #bbb;
+}
+
+  
