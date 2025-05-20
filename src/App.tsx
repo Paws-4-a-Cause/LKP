@@ -10,6 +10,8 @@ import CatTherapy from "./pages/CatTherapy";
 import ForCatRescuers from "./pages/ForCatRescuers";
 import CatGallery from "./pages/CatGallery";
 import CatProfile from "./pages/CatProfile";
+import AdoptionProcess from "./pages/AdoptionProcess.tsx";
+import Footer from "./components/footer";
 
 const App = () => {
   return (
@@ -21,6 +23,7 @@ const App = () => {
         <Route path="/about" element={<AboutLKP />} />
         <Route path="/cat-gallery" element={<CatGallery />} />
         <Route path="/cats/:slug" element={<CatProfile />} />
+        <Route path="/adoption-process" element={<AdoptionProcess />} />
         <Route path="/donate" element={<Donate />} />
         <Route path="/in-kind-donations" element={<InKindDonations />} />
         <Route path="/events" element={<Events />} />
@@ -28,6 +31,8 @@ const App = () => {
         <Route path="/for-cat-rescuers" element={<ForCatRescuers />} />
         <Route path="/volunteer-opportunities" element={<VolunteerOpportunities />} />
       </Routes>
+
+      <Footer /> {/* Display Footer at the bottom of the page */}
     </Router>
   );
 };
