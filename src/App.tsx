@@ -16,8 +16,9 @@ import Footer from "./components/footer";
 const App = () => {
   return (
     <Router >
+      <div className="flex flex-col min-h-screen bg-[#FDF9DC]">
       <MenuBar /> {/* Display the Navbar at the top */}
-
+      <main className="flex-grow pt-[100px] bg-[#FDF9DC]"> 
       <Routes>
         <Route path ="/" element={<Home />} />
         <Route path="/about" element={<AboutLKP />} />
@@ -31,8 +32,10 @@ const App = () => {
         <Route path="/for-cat-rescuers" element={<ForCatRescuers />} />
         <Route path="/volunteer-opportunities" element={<VolunteerOpportunities />} />
       </Routes>
+      </main>
 
       <Footer /> {/* Display Footer at the bottom of the page */}
+    </div>
     </Router>
   );
 };

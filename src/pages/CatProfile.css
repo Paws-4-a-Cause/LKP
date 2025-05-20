@@ -1,88 +1,89 @@
+/* CatProfile.css */
+
 /* Make the profile take up the entire page */
 .cat-profile {
-    display: flex;
-    height: 100vh;
-    font-family: "Arial", sans-serif;
-    overflow: hidden; /* Prevents scrolling */
-  }
-  
-  /* Split the Profile into Two Equal Halves */
-  .profile-left, .profile-right {
-    width: 50%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 40px;
-  }
-  
-  /* Left Side - Background Color & Paws Image */
+  display: flex;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+  margin: 0;
+}
+
+/* Split into bio (60%) and image (40%) */
 .profile-left {
-  width: 50%;
+  width: 55%;
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   padding: 60px;
-  color: white;
-  position: relative; /* Allows absolute positioning inside */
-  
-}
-.profile-left::after {
-  content: "";
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 500px;
-  height: 500px;
-  background-image: url("/src/assets/paws.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  filter: grayscale(100%) brightness(80%); /* Makes it grey */
-  opacity: 0.3; /* Adjust transparency */
-  z-index: 1;
-}
-
-
-/* Ensure the text is on top of the background */
-.profile-left h1 {
-  font-style: italic;
-    color: rgb(19, 18, 18);
-    font-size: 25px;
-    font-weight: bold;
-    line-height: 1.6;
-    max-width: 500px;
-}
-.profile-left p {
+  background-color: rgb(253, 249, 220);
   position: relative;
-  z-index: 2; /* Puts text above the background */
+  text-align: left;
 }
-  
-  .bio {
-    font-style: italic;
-    color: rgb(37, 36, 36);
-    font-size: 18px;
-    line-height: 1.6;
-    max-width: 500px;
-  }
-  
-/* Right Side - Background Image */
+
 .profile-right {
+  width: 45%;
+  height: 100vh;
+  display: flex;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
-  display: flex;
-  align-items: center;
+  align-items: flex-end; /* move details to bottom */
   justify-content: flex-end;
   padding-right: 40px;
-  width: 50%;
-  height: 100vh;
 }
 
+/* Greyed, semi-transparent paws background */
+.profile-left::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 500px;
+  height: 500px;
+  background-size: contain;
+  filter: grayscale(100%) brightness(80%);
+  opacity: 0.3;
+  z-index: 1;
+}
 
+/* Name + Paws */
+.name-with-paws {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  z-index: 2;
+}
 
-/* Details box above the overlay */
+.paws-icon {
+  width: 128px;
+  height: 128px;
+}
+
+.cat-name {
+  margin: 0;
+  font-size: 5rem;
+  color: rgb(19, 18, 18);
+  font-weight: bold;
+  line-height: 1.6;
+  font-family: 'Le Petit Cochon', cursive;
+}
+
+/* Bio text */
+.bio {
+  position: relative;
+  z-index: 2;
+  margin: 0;
+  font-style: italic;
+  color: rgb(37, 36, 36);
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 100%; /* allow fill container */
+}
+
+/* Details box */
 .details-box {
   position: relative;
   z-index: 2;
@@ -94,37 +95,56 @@
   width: 80%;
   max-width: 320px;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px; /* extra space from bottom */
 }
-
 
 .details-box p {
   margin: 12px 0;
   font-size: 16px;
   color: #444;
 }
-  
-  /* Back Button */
-  .back-button {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 15px;
-    background: #fe7301;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  
-  .back-button:hover {
-    background: #f49965;
-  }
-  
-  
-  
 
-  
-  
+/* Back button */
+.back-button {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 15px;
+  background: #fe7301;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.back-button:hover {
+  background: #f49965;
+}
+
+/* Responsive: stack vertically on mobile */
+@media (max-width: 768px) {
+  .cat-profile {
+    flex-direction: column;
+  }
+
+  .profile-left, .profile-right {
+    width: 100%;
+    height: auto;
+  }
+
+  .profile-right {
+    min-height: 250px;
+    order: -1;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .back-button {
+    bottom: auto;
+    top: 1rem;
+    transform: none;
+    margin: 0 auto;
+  }
+}

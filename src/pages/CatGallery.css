@@ -1,9 +1,5 @@
 .cat-gallery-header {
   position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
   width: 100vw;
   height: 35vh;
   background-color:#E9C368 ;
@@ -13,7 +9,6 @@
   align-items: center;
 }
 .cat-gallery-header h1 {
-  padding-top: 2vh;
   font-family: 'Le Petit Cochon';
   font-size: 50px;
 }
@@ -28,7 +23,6 @@
 
 .cat-gallery {
     text-align: center;
-    padding-top: 6rem;
     background-color: #FFFBE2;
     min-height: 100vh;
 
