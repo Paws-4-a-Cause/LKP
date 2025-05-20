@@ -1,0 +1,67 @@
+/* Home Page Styles */
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Full-screen background with ThreeCats.jpg */
+.hero-background {
+  background-image: url('../assets/placeholder pictures/ThreeCats.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+/* Centered overlay content */
+.hero-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.85);
+  padding: 2rem 3rem;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Hero Text Styling */
+.hero-overlay h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #2e7d32;
+  margin-bottom: 0.5rem;
+}
+
+.hero-overlay p {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+/* CTA Button */
+.cta-button {
+  background-color: #ff7043;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #f4511e;
+}
+
+
+
+
+

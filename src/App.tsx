@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import MenuBar from "./components/menubar.tsx";
+import Home from "./pages/Home";
 import AboutLKP from "./pages/AboutLKP";
 import Donate from "./pages/Donate";
 import InKindDonations from "./pages/InKindDonations";
@@ -15,11 +15,12 @@ import Footer from "./components/footer";
 
 const App = () => {
   return (
-    <Router>
+    <Router >
       <MenuBar /> {/* Display the Navbar at the top */}
 
       <Routes>
-        <Route path="/" element={<AboutLKP />} />
+        <Route path ="/" element={<Home />} />
+        <Route path="/about" element={<AboutLKP />} />
         <Route path="/cat-gallery" element={<CatGallery />} />
         <Route path="/cats/:slug" element={<CatProfile />} />
         <Route path="/adoption-process" element={<AdoptionProcess />} />

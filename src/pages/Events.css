@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,463;1,463&display=swap');
+* {
+font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+
+}
+.events-page {
+  background-color: #ffeee0;
+}
+.heading-events {
+    margin-top: 100px;
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+    padding-top: 30px;
+    color:#4a7552;
+    text-align: center;
+    font-weight: bold;
+}
+.carousel-container {
+  padding-top: 150px;
+  position: relative;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0px;
+}
+
+.carousel {
+  width: 80%;
+  min-height: 400px; /* Ensures it grows with content */
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers the content horizontally */
+  justify-content: flex-start; /* Aligns content to the top */
+  background-color: white;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-color: lightgrey;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  padding: 20px; /* Adds spacing around content */
+}
+
+.carousel-item {
+  position: relative;
+  width: 80%;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers content horizontally */
+  justify-content: flex-start; /* Aligns content to the top */
+  overflow-y: auto;
+  font-size: 2rem;
+  font-weight: bold;
+  background-color: white;
+  border-radius: 10px;
+  border-color: #d45a0a;
+  padding-top: 20px; /* Pushes content down slightly */
+}
+
+.event-description {
+  background-color: transparent;
+  text-align: center;
+  width: 80%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Aligns text to the top */
+}
+
+
+  
+  /* Event heading */
+  .event-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #056a4c;
+    margin-bottom: 30px;
+  }
+  
+  /* Event description text */
+  .event-details {
+    width: 60%;
+    font-size: 1rem;
+    font-weight: normal;
+    color: #4a4a4a;
+    margin-top: 50px;
+    display: block;
+    text-align: left;
+  }
+
+  .register-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #056a4c;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    align-self: center;
+    font-size: 1rem;
+    margin-top: 40px;
+  }
+  
+  .register-button:hover {
+    background-color: #04513a;
+  }
+
+
+  /* Make navigation buttons larger */
+.carousel button {
+  width: 60px;  /* Adjust size */
+  height: 60px;
+  font-size: 24px; /* Increase arrow size */
+  border-radius: 50%; /* Keep it circular */
+  background-color: #f57d2f; /* Slight transparency */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.carousel button:first-of-type { /* Previous button */
+  left: -80px; /* Move further left */
+}
+
+.carousel button:last-of-type { /* Next button */
+  right: -80px; /* Move further right */
+}
+
+/* Hover effect */
+.carousel button:hover {
+  transform: scale(1.2); /* Slight zoom-in effect */
+  background-color: #d45a0a;
+}
+
+.carousel-item img {
+  width: auto;  /* Maintain aspect ratio */
+  height: 500px; /* Adjust based on `image2` height */
+  object-fit: cover; /* Ensures consistent cropping */
+  border-radius: 10px; /* Optional: keeps rounded edges */
+}
