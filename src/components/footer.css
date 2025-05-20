@@ -37,7 +37,7 @@
 }
 
 .footer-contact h3, .footer-social h3 {
-  font-size: 1rem; /* Reduced heading font size */
+  font-size: 2rem; /* Reduced heading font size */
   margin-bottom: 5px; /* Add space below the headings */
   font-family: 'Le Petit Cochon';
   font-weight: bold;

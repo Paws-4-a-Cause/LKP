@@ -1,7 +1,6 @@
 import React from "react";
-// import { Link } from "react-router-dom";
-import "./footer.css"; // Import the footer CSS file
-import logo from "../assets/LKPLogo.jpg"; // Import the logo image
+import "./footer.css";
+import logo from "@/assets/LKPLogo.png"
 
 // Define the Footer component
 const Footer: React.FC = () => {
