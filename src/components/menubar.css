@@ -88,3 +88,29 @@ div[data-radix-menu-content] {
  .text {
     font-size: 15px;
  }
+
+ /* Make all top‐level triggers change on hover */
+.menubar .menu-items .text {
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.menubar .menu-items .text:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff; /* or whatever “active” color you prefer */
+}
+
+/* If you want your dropdown items to have the same hover effect: */
+.menubar .menu-items .menu-content .menubar-item {
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.menubar .menu-items .menu-content .menubar-item:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #000;
+  cursor: pointer;
+}
