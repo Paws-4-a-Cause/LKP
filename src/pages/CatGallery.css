@@ -1,64 +1,89 @@
 .cat-gallery-header {
   position: relative;
-  width: 100vw;
-  height: 35vh;
+  width: 100%;
+  height: 25vh;
   background-color:#E9C368 ;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  padding: 1rem;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
 }
+
 .cat-gallery-header h1 {
   font-family: 'Le Petit Cochon';
-  font-size: 50px;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  line-height: 1.1;
 }
 
-
-
 .cat-gallery-description {
-  max-width: 50vw;
+  max-width: 90vw;
   text-align: center;
-  padding-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.4;
 }
 
 .cat-gallery {
     text-align: center;
     background-color: #FFFBE2;
-    min-height: 100vh;
-
-  }
+    min-height: auto;
+    padding: 0.5rem;
+    margin: 0;
+    margin-top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
 
 .cat-gallery h1 {
     margin-bottom: 20px;
 }
   
-  .cat-list {
-    padding-top: 2vh;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 50px;
+.cat-list {
+    padding-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
   
-  }
-  
-  .cat-card {
+.cat-card {
     border-radius: 8px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-    width: 200px;
+    width: 100%;
+    max-width: 250px;
     text-align: center;
-  }
-  
-  .cat-card h3 {
-    font-size: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    margin: 0 auto;
+    background: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.cat-card h3 {
+    font-size: 1.2rem;
+    padding: 1rem 0.5rem;
     font-weight: bold;
     background-color: white;
     border-radius: 0 0 8px 8px;
     transition: transform 0.3s ease;
-  }
+    margin: 0;
+    line-height: 1.3;
+}
   
-  .cat-link {
+.cat-link {
     font-size: 20px;
     text-decoration: none;
     color: white;
@@ -67,17 +92,254 @@
     border-radius: 5px;
     display: inline-block;
     transition: 0.3s;
-  }
+}
 
-  .cat-card:hover {
+.cat-card:hover {
     transform: translateY(-5px);
-  }
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
 
-  
-  .cat-image {
+.cat-image {
     display: block;
     width: 100%;
-    height: 30vh;
+    height: 250px;
     object-fit: cover;
+    object-position: center 20%;
     border-radius: 8px 8px 0 0;
+    background-color: #f8f9fa;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .cat-gallery-header {
+    height: 30vh;
+    padding: 1.5rem;
   }
+  
+  .cat-gallery-header h1 {
+    font-size: 3.5rem;
+  }
+  
+  .cat-gallery-description {
+    max-width: 70vw;
+    font-size: 1.1rem;
+  }
+  
+  .cat-list {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 1.5rem;
+  }
+  
+  .cat-card {
+    max-width: 280px;
+  }
+  
+  .cat-card h3 {
+    font-size: 1.4rem;
+    padding: 1rem 0.75rem;
+  }
+  
+  .cat-image {
+    height: 280px;
+    object-fit: cover;
+    object-position: center 20%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .cat-gallery-header {
+    height: 35vh;
+    padding: 2.5rem 2rem;
+  }
+  
+  .cat-gallery-header h1 {
+    font-size: 4rem;
+  }
+  
+  .cat-gallery-description {
+    max-width: 60vw;
+    font-size: 1.2rem;
+  }
+  
+  .cat-list {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 3rem;
+    padding: 2.5rem 2rem;
+  }
+  
+  .cat-card {
+    max-width: 320px;
+  }
+  
+  .cat-card h3 {
+    font-size: 1.6rem;
+    padding: 1.2rem 1rem;
+  }
+  
+  .cat-image {
+    height: 320px;
+    object-fit: cover;
+    object-position: center 20%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .cat-gallery-header {
+    height: 40vh;
+    padding: 3rem 2.5rem;
+  }
+  
+  .cat-gallery-header h1 {
+    font-size: 5rem;
+  }
+  
+  .cat-gallery-description {
+    max-width: 50vw;
+    font-size: 1.3rem;
+  }
+  
+  .cat-list {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 4rem;
+    padding: 3rem 2.5rem;
+  }
+  
+  .cat-card {
+    max-width: 350px;
+  }
+  
+  .cat-card h3 {
+    font-size: 1.8rem;
+    padding: 1.5rem 1.2rem;
+  }
+  
+  .cat-image {
+    height: 380px;
+    object-fit: cover;
+    object-position: center 20%;
+  }
+}
+
+/* Mobile-first improvements */
+@media (max-width: 767px) {
+  .cat-gallery-header {
+    height: 30vh;
+    padding: 1.5rem 1rem;
+    margin-top: 0;
+  }
+  
+  .cat-gallery-header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .cat-gallery-description {
+    max-width: 95vw;
+    font-size: 0.95rem;
+    padding-bottom: 0.75rem;
+  }
+  
+  .cat-gallery {
+    padding: 0.5rem;
+  }
+  
+  .cat-list {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1.5rem;
+    padding: 1.5rem 0.5rem;
+  }
+  
+  .cat-card {
+    max-width: 200px;
+  }
+  
+  .cat-card h3 {
+    font-size: 1.1rem;
+    padding: 0.75rem 0.5rem;
+  }
+  
+  .cat-image {
+    height: 200px;
+    object-fit: cover;
+    object-position: center 20%;
+  }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+  .cat-gallery-header {
+    height: 25vh;
+    padding: 1rem 0.75rem;
+    margin-top: 0;
+  }
+  
+  .cat-gallery-header h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .cat-gallery-description {
+    max-width: 98vw;
+    font-size: 0.9rem;
+    padding-bottom: 0.5rem;
+  }
+  
+  .cat-gallery {
+    padding: 0.25rem;
+  }
+  
+  .cat-list {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1rem;
+    padding: 1rem 0.25rem;
+  }
+  
+  .cat-card {
+    max-width: 180px;
+  }
+  
+  .cat-card h3 {
+    font-size: 1rem;
+    padding: 0.5rem 0.25rem;
+  }
+  
+  .cat-image {
+    height: 180px;
+    object-fit: cover;
+    object-position: center 20%;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 360px) {
+  .cat-gallery-header {
+    height: 20vh;
+    padding: 0.75rem 0.5rem;
+    margin-top: 0;
+  }
+  
+  .cat-gallery-header h1 {
+    font-size: 1.5rem;
+  }
+  
+  .cat-gallery-description {
+    font-size: 0.85rem;
+  }
+  
+  .cat-list {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem 0.5rem;
+  }
+  
+  .cat-card {
+    max-width: 100%;
+  }
+  
+  .cat-image {
+    height: 220px;
+    object-fit: cover;
+    object-position: center 20%;
+  }
+}

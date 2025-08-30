@@ -21,16 +21,36 @@ export default function CatProfile() {
           <h1 className="cat-name">{cat.name.toUpperCase()}</h1>
         </div>
         <p className="bio">{cat.bio}</p>
-              <div className="mt-6">
-        <Link to="/cat-gallery">
-          <Button
-            variant="outline"
-            className="bg-[#67BAA7] hover:bg-[#67BAA7] text-white"
-          >
-            ← Back to Our Cats
-          </Button>
-        </Link>
-      </div>
+        
+        {/* Mobile Details Box - shown only on mobile */}
+        <div className="mobile-details-box">
+          <p>
+            <strong>Age:</strong> {cat.age} years
+          </p>
+          <p>
+            <strong>Sex:</strong> {cat.sex}
+          </p>
+          <p>
+            <strong>FIV Status:</strong> {cat.FIV_status}
+          </p>
+          <p>
+            <strong>Likes:</strong> {cat.likes.join(", ")}
+          </p>
+          <p>
+            <strong>Dislikes:</strong> {cat.dislikes.join(", ")}
+          </p>
+        </div>
+        
+        <div className="mt-6">
+          <Link to="/cat-gallery">
+            <Button
+              variant="outline"
+              className="bg-[#67BAA7] hover:bg-[#67BAA7] text-white"
+            >
+              ← Back to Our Cats
+            </Button>
+          </Link>
+        </div>
       </div>
 
       {/* Right Section */}

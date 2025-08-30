@@ -3,35 +3,37 @@
 /* Make the profile take up the entire page */
 .cat-profile {
   display: flex;
-  height: 100vh;
+  flex-direction: column;
+  min-height: 100vh;
   font-family: Arial, sans-serif;
-  overflow: hidden;
   margin: 0;
+  margin-top: 100px; /* Account for fixed navbar */
 }
 
 /* Split into bio (60%) and image (40%) */
 .profile-left {
-  width: 55%;
-  height: 100vh;
+  width: 100%;
+  min-height: 50vh;
   display: flex;
   flex-direction: column;
-  padding: 60px;
+  padding: 2rem 1rem;
   background-color: rgb(253, 249, 220);
   position: relative;
   text-align: left;
 }
 
 .profile-right {
-  width: 45%;
-  height: 100vh;
+  width: 100%;
+  min-height: 50vh;
   display: flex;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
-  align-items: flex-end; /* move details to bottom */
-  justify-content: flex-end;
-  padding-right: 40px;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 2rem 1rem;
+  background-color: #f8f9fa;
 }
 
 /* Greyed, semi-transparent paws background */
@@ -40,8 +42,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 500px;
-  height: 500px;
+  width: 300px;
+  height: 300px;
   background-size: contain;
   filter: grayscale(100%) brightness(80%);
   opacity: 0.3;
@@ -55,19 +57,20 @@
   gap: 0.5rem;
   margin-bottom: 1rem;
   z-index: 2;
+  flex-wrap: wrap;
 }
 
 .paws-icon {
-  width: 128px;
-  height: 128px;
+  width: 64px;
+  height: 64px;
 }
 
 .cat-name {
   margin: 0;
-  font-size: 5rem;
+  font-size: 2.5rem;
   color: rgb(19, 18, 18);
   font-weight: bold;
-  line-height: 1.6;
+  line-height: 1.2;
   font-family: 'Le Petit Cochon', cursive;
 }
 
@@ -78,9 +81,10 @@
   margin: 0;
   font-style: italic;
   color: rgb(37, 36, 36);
-  font-size: 18px;
+  font-size: 1rem;
   line-height: 1.6;
-  max-width: 100%; /* allow fill container */
+  max-width: 100%;
+  margin-bottom: 1rem;
 }
 
 /* Details box */
@@ -88,63 +92,386 @@
   position: relative;
   z-index: 2;
   background: rgba(255, 245, 230, 0.9);
-  padding: 30px;
+  padding: 1.5rem;
   border-radius: 10px;
   text-align: left;
   border: 2px solid #fe7301;
-  width: 80%;
-  max-width: 320px;
+  width: 90%;
+  max-width: 400px;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
-  margin-bottom: 40px; /* extra space from bottom */
+  margin-bottom: 2rem;
 }
 
 .details-box p {
-  margin: 12px 0;
-  font-size: 16px;
-  color: #444;
+  margin: 0.5rem 0;
+  font-size: 0.95rem;
+  line-height: 1.4;
 }
 
 /* Back button */
-.back-button {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  padding: 10px 15px;
-  background: #fe7301;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-  transition: background-color 0.2s;
+.mt-6 {
+  margin-top: 1.5rem;
 }
 
-.back-button:hover {
-  background: #f49965;
+/* Mobile Details Box - hidden by default, shown only on mobile */
+.mobile-details-box {
+  display: none;
+  background: rgba(255, 245, 230, 0.9);
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: left;
+  border: 2px solid #fe7301;
+  width: 95%;
+  max-width: 350px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+  position: relative;
+  z-index: 2;
 }
 
-/* Responsive: stack vertically on mobile */
-@media (max-width: 768px) {
+.mobile-details-box p {
+  margin: 0.5rem 0;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .cat-profile {
+    flex-direction: row;
+  }
+  
+  .profile-left {
+    width: 55%;
+    min-height: 100vh;
+    padding: 3rem 2rem;
+  }
+  
+  .profile-right {
+    width: 45%;
+    min-height: 100vh;
+    padding: 3rem 2rem;
+    justify-content: flex-end;
+    background-size: contain;
+  }
+  
+  .profile-left::after {
+    width: 400px;
+    height: 400px;
+  }
+  
+  .paws-icon {
+    width: 96px;
+    height: 96px;
+  }
+  
+  .cat-name {
+    font-size: 3.5rem;
+  }
+  
+  .bio {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .details-box {
+    padding: 2rem;
+    width: 80%;
+    max-width: 350px;
+    margin-bottom: 3rem;
+  }
+  
+  .details-box p {
+    font-size: 1rem;
+    margin: 0.75rem 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .profile-left {
+    padding: 4rem 3rem;
+  }
+  
+  .profile-right {
+    padding: 4rem 3rem;
+  }
+  
+  .profile-left::after {
+    width: 500px;
+    height: 500px;
+  }
+  
+  .paws-icon {
+    width: 128px;
+    height: 128px;
+  }
+  
+  .cat-name {
+    font-size: 4.5rem;
+  }
+  
+  .bio {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .details-box {
+    padding: 2.5rem;
+    width: 80%;
+    max-width: 380px;
+    margin-bottom: 4rem;
+  }
+  
+  .details-box p {
+    font-size: 1.1rem;
+    margin: 1rem 0;
+  }
+}
+
+@media (min-width: 1440px) {
+  .profile-left {
+    padding: 5rem 4rem;
+  }
+  
+  .profile-right {
+    padding: 5rem 4rem;
+  }
+  
+  .cat-name {
+    font-size: 5rem;
+  }
+  
+  .bio {
+    font-size: 1.3rem;
+    margin-bottom: 2.5rem;
+  }
+  
+  .details-box {
+    padding: 3rem;
+    width: 80%;
+    max-width: 400px;
+    margin-bottom: 5rem;
+  }
+  
+  .details-box p {
+    font-size: 1.2rem;
+    margin: 1.2rem 0;
+  }
+}
+
+/* Mobile-first improvements */
+@media (max-width: 767px) {
+  .cat-profile {
+    margin-top: 80px;
+    flex-direction: column;
+  }
+  
+  .profile-left {
+    width: 100%;
+    padding: 1.5rem 1rem;
+    min-height: auto;
+  }
+  
+  .profile-right {
+    width: 100%;
+    padding: 1.5rem 1rem;
+    min-height: 50vh;
+    align-items: center;
+    justify-content: center;
+    order: 2;
+  }
+  
+  .profile-left::after {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .paws-icon {
+    width: 48px;
+    height: 48px;
+  }
+  
+  .cat-name {
+    font-size: 2rem;
+  }
+  
+  .bio {
+    font-size: 0.95rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .details-box {
+    padding: 1.25rem;
+    width: 95%;
+    max-width: 350px;
+    margin-bottom: 1.5rem;
+  }
+  
+  .details-box p {
+    font-size: 0.9rem;
+    margin: 0.4rem 0;
+  }
+  
+  .mt-6 {
+    margin-top: 1rem;
+  }
+  
+  /* Hide details box on mobile - show it in the left panel instead */
+  .profile-right .details-box {
+    display: none;
+  }
+  
+  /* Show mobile details box on mobile */
+  .mobile-details-box {
+    display: block;
+  }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+  .cat-profile {
+    margin-top: 70px;
+    flex-direction: column;
+  }
+  
+  .profile-left {
+    width: 100%;
+    padding: 1rem 0.75rem;
+    min-height: auto;
+  }
+  
+  .profile-right {
+    width: 100%;
+    padding: 1rem 0.75rem;
+    min-height: 40vh;
+    align-items: center;
+    justify-content: center;
+    order: 2;
+  }
+  
+  .profile-left::after {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .paws-icon {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .cat-name {
+    font-size: 1.8rem;
+  }
+  
+  .bio {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .details-box {
+    padding: 1rem;
+    width: 98%;
+    max-width: 320px;
+    margin-bottom: 1rem;
+  }
+  
+  .details-box p {
+    font-size: 0.85rem;
+    margin: 0.3rem 0;
+  }
+  
+  .mt-6 {
+    margin-top: 0.75rem;
+  }
+  
+  /* Show mobile details box on small mobile */
+  .mobile-details-box {
+    display: block;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 360px) {
   .cat-profile {
     flex-direction: column;
   }
-
-  .profile-left, .profile-right {
+  
+  .profile-left {
     width: 100%;
-    height: auto;
+    padding: 0.75rem 0.5rem;
+    min-height: auto;
   }
-
+  
   .profile-right {
-    min-height: 250px;
-    order: -1;
+    width: 100%;
+    padding: 0.75rem 0.5rem;
+    min-height: 35vh;
     align-items: center;
     justify-content: center;
+    order: 2;
   }
+  
+  .profile-left::after {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .paws-icon {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .cat-name {
+    font-size: 1.5rem;
+  }
+  
+  .bio {
+    font-size: 0.85rem;
+  }
+  
+  .details-box {
+    padding: 0.75rem;
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .details-box p {
+    font-size: 0.8rem;
+  }
+  
+  /* Show mobile details box on extra small mobile */
+  .mobile-details-box {
+    display: block;
+  }
+}
 
-  .back-button {
-    bottom: auto;
-    top: 1rem;
-    transform: none;
-    margin: 0 auto;
+/* Ensure proper button styling on mobile */
+@media (max-width: 767px) {
+  .mt-6 button {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+  }
+}
+
+/* Landscape orientation adjustments for mobile */
+@media (max-width: 767px) and (orientation: landscape) {
+  .cat-profile {
+    flex-direction: row;
+  }
+  
+  .profile-left {
+    width: 50%;
+    min-height: 100vh;
+  }
+  
+  .profile-right {
+    width: 50%;
+    min-height: 100vh;
+  }
+  
+  .profile-left::after {
+    width: 200px;
+    height: 200px;
   }
 }
