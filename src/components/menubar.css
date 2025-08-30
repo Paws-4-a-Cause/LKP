@@ -7,47 +7,16 @@
     font-style: normal;
 }
 @import url('https://fonts.googleapis.com/css2?family=Chewy&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,463;1,463&display=swap');
+
 * {
-font-family: "Nunito", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-
-}
-.heading {
-    font-family: 'Le Petit Cochon', cursive;
-    font-size: 50px;
-    padding-top: 10px;
-}
-
-@media (max-width: 1260px) {
-    .heading::after {
-       
-        content: "LKP";
-    }
-    .heading {
-        padding-top:20px;
-        font-size: 45px; /* Optional: Adjust font size for smaller screens */
-    }
-}
-@media (max-width: 856px) {
-    .heading {
-        display: none;
-    }
-    .logo-img {
-        display: none;
-    }
-
-}
-
-@media (min-width: 1261px) {
-    .heading::after {
-        content: "love kuching project";
-    }
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 /* Ensure the menubar itself is positioned correctly */
 .menubar {
-    position:fixed;
+    position: fixed;
     z-index: 1000000000;
     top: 0;
     left: 0;
@@ -61,56 +30,390 @@ font-family: "Nunito", sans-serif;
     padding: 20px;
     border: 0px;
     border-radius: 0px;
-     /* Ensure it's above other elements but below dropdown */
+    /* Override default Radix UI styling */
+    background: #f57d2f !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 20px !important;
+    height: 100px !important;
 }
-div[data-radix-menu-content] {
-    z-index: 100000000000;
+
+.heading {
+    font-family: 'Le Petit Cochon', cursive;
+    font-size: 50px;
+    padding-top: 10px;
+    margin: 0;
 }
 
 .logo-img {
-    padding-top:0px;
+    padding-top: 0px;
     width: 90px;  
     height: 90px;  
     object-fit: cover;  /* Ensures the image fills the circle properly */
-    
+}
+
+.heading-logo {
+    display: flex;
+    gap: 20px;
+    align-items: center;
 }
 
 .menu-items {
     display: flex;  
     gap: 20px;  /* Adds spacing between menu items */
     z-index: 1100;
+    position: relative; /* Ensure proper positioning context for dropdowns */
 }
 
-.heading-logo {
-    display: flex;
-    gap: 20px;
+/* Ensure each menu item can position its dropdown properly */
+.menu-items > div {
+    position: relative;
 }
- .text {
+
+.text {
     font-size: 15px;
- }
-
- /* Make all top‐level triggers change on hover */
-.menubar .menu-items .text {
-  padding: 0.5rem 1rem;
-  border-radius: 0.25rem;
-  transition: background-color 0.2s, color 0.2s;
+    color: white;
+    text-decoration: none;
+    background: none !important;
+    border: none !important;
+    padding: 0.5rem 1rem !important;
+    border-radius: 0.25rem;
+    transition: background-color 0.2s, color 0.2s;
+    cursor: pointer;
 }
 
+/* Make all top‐level triggers change on hover */
 .menubar .menu-items .text:hover {
-  cursor: pointer;
-  background-color: rgba(255, 255, 255, 0.1);
-  color: #ffffff; /* or whatever “active” color you prefer */
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    color: #ffffff !important;
 }
 
-/* If you want your dropdown items to have the same hover effect: */
-.menubar .menu-items .menu-content .menubar-item {
-  padding: 0.5rem 1rem;
-  border-radius: 0.25rem;
-  transition: background-color 0.2s, color 0.2s;
+/* Override Radix UI default styling for the menubar */
+.menubar[data-radix-menubar-root] {
+    background: #f57d2f !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 20px !important;
+    height: 100px !important;
+    border-radius: 0 !important;
 }
 
-.menubar .menu-items .menu-content .menubar-item:hover {
-  background-color: rgba(255, 255, 255, 0.05);
-  color: #000;
-  cursor: pointer;
+/* Proper dropdown styling using Radix UI classes */
+[data-radix-menubar-content] {
+    background: white !important;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 8px !important;
+    box-shadow: 0 10px 38px -10px rgba(22, 23, 24, 0.35), 0 10px 20px -15px rgba(22, 23, 24, 0.2) !important;
+    padding: 8px 0 !important;
+    min-width: 200px !important;
+    z-index: 100000000000 !important;
+}
+
+/* Dropdown items styling */
+[data-radix-menubar-item] {
+    padding: 8px 16px !important;
+    border-radius: 4px !important;
+    transition: background-color 0.2s, color 0.2s !important;
+    cursor: pointer !important;
+    color: #333 !important;
+    font-size: 14px !important;
+    line-height: 1.4 !important;
+    outline: none !important;
+    background: transparent !important;
+    border: none !important;
+    margin: 0 !important;
+}
+
+[data-radix-menubar-item]:hover {
+    background-color: #f5f5f5 !important;
+    color: #000 !important;
+}
+
+[data-radix-menubar-item]:focus {
+    background-color: #f0f0f0 !important;
+    color: #000 !important;
+}
+
+/* Ensure dropdown items are properly spaced */
+[data-radix-menubar-item] a {
+    color: inherit !important;
+    text-decoration: none !important;
+    display: block !important;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+/* Mobile Menu Button */
+.mobile-menu-button {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1000000001;
+}
+
+.hamburger {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+.hamburger::before {
+    top: -8px;
+}
+
+.hamburger::after {
+    bottom: -8px;
+}
+
+.hamburger.open {
+    background-color: transparent;
+}
+
+.hamburger.open::before {
+    top: 0;
+    transform: rotate(45deg);
+}
+
+.hamburger.open::after {
+    bottom: 0;
+    transform: rotate(-45deg);
+}
+
+/* Mobile Menu Overlay */
+.mobile-menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000000002;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.mobile-menu-overlay.open {
+    opacity: 1;
+    visibility: visible;
+}
+
+.mobile-menu-content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100vh;
+    background-color: #f57d2f;
+    padding: 20px;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    overflow-y: auto;
+}
+
+.mobile-menu-overlay.open .mobile-menu-content {
+    transform: translateX(0);
+}
+
+.mobile-menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.mobile-logo {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+
+.close-mobile-menu {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 5px;
+    line-height: 1;
+}
+
+.mobile-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.mobile-nav-item {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 8px;
+    transition: background-color 0.2s;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.mobile-nav-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.mobile-dropdown {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.mobile-dropdown-trigger {
+    width: 100%;
+    background: none;
+    border: none;
+    color: white;
+    padding: 15px;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    font-family: inherit;
+}
+
+.mobile-dropdown-trigger:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.mobile-dropdown-content {
+    background-color: rgba(255, 255, 255, 0.1);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.mobile-dropdown.active .mobile-dropdown-content {
+    max-height: 500px;
+}
+
+.mobile-dropdown-item {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    font-size: 14px;
+    transition: background-color 0.2s;
+}
+
+.mobile-dropdown-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 1260px) {
+    .heading::after {
+        content: "LKP";
+    }
+    .heading {
+        padding-top: 20px;
+        font-size: 45px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .heading {
+        font-size: 40px;
+    }
+    
+    .menu-items {
+        gap: 15px;
+    }
+    
+    .text {
+        font-size: 14px;
+        padding: 0.4rem 0.8rem !important;
+    }
+}
+
+@media (max-width: 856px) {
+    .heading {
+        display: none;
+    }
+    
+    .desktop-menu {
+        display: none;
+    }
+    
+    .mobile-menu-button {
+        display: block;
+    }
+    
+    .menubar {
+        padding: 15px 20px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .menubar {
+        height: 80px !important;
+        padding: 15px !important;
+    }
+    
+    .logo-img {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .mobile-menu-content {
+        width: 100%;
+        right: 0;
+    }
+    
+    .mobile-menu-header {
+        margin-bottom: 20px;
+        padding-bottom: 15px;
+    }
+    
+    .mobile-logo {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .mobile-nav-item,
+    .mobile-dropdown-trigger {
+        padding: 12px;
+        font-size: 15px;
+    }
+}
+
+/* Focus states for accessibility */
+.mobile-menu-button:focus,
+.close-mobile-menu:focus,
+.mobile-dropdown-trigger:focus {
+    outline: 2px solid white;
+    outline-offset: 2px;
+}
+
+/* Ensure dropdowns work properly on mobile */
+@media (max-width: 856px) {
+    .mobile-dropdown-content {
+        display: none;
+    }
+    
+    .mobile-dropdown.active .mobile-dropdown-content {
+        display: block;
+    }
 }
