@@ -1,5 +1,5 @@
 import "./Donate.css"; 
-
+import PayNowQR from "../assets/paynow-qr.jpg";
 const Donate = () => {
   return (
     <div className="donate-container">
@@ -46,7 +46,8 @@ const Donate = () => {
 
         <div className="qr-code">
           <p>Scan this QR code to donate via PayNow:</p>
-          <img src="/assets/paynow-qr.png" alt="PayNow QR Code" />
+          <img src={PayNowQR}
+           alt="PayNow QR Code" />
         </div>
       </section>
     </div>
