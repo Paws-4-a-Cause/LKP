@@ -1,6 +1,6 @@
 /* General Page Styling */
 .volunteer-opportunities-container {
-  width: 100vw;
+  width: 100%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -28,6 +28,7 @@
   height: 500px;
   /* Full-width and rectangular */
   object-fit: cover;
+  display: block;
 }
 
 /* Hero Overlay */
@@ -41,6 +42,7 @@
   border-radius: 10px;
   text-align: center;
   width: 50%;
+  max-width: 600px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
   color: #2d4739;
   /* Dark green */
@@ -52,12 +54,15 @@
   font-weight: bold;
   color: #0F8D61;
   font-family: 'Le Petit Cochon';
+  line-height: 1.2;
+  margin: 0 0 10px 0;
 }
 
 .hero-overlay p {
   font-size: 18px;
   font-weight: 500;
   color: #5a3838;
+  margin: 0;
 }
 
 /* Section Wrapper */
@@ -67,7 +72,7 @@
   justify-content: space-between;
   width: 85%;
   max-width: 1100px;
-  margin: 50px auto;
+  margin: 30px auto;
   gap: 30px;
 }
 
@@ -92,6 +97,8 @@
   font-weight: 300;
   color: #0F8D61;
   margin-bottom: 20px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .section h3 {
@@ -125,6 +132,8 @@
   border-radius: 8px;
   transition: all 0.3s ease;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  min-height: 44px; /* Touch-friendly */
+  box-sizing: border-box;
 }
 
 .apply-button:hover {
@@ -410,14 +419,57 @@
 }
 
 /* Responsive Design */
+@media (max-width: 1200px) {
+  .hero-image {
+    height: 450px;
+  }
+  
+  .hero-overlay {
+    width: 60%;
+    padding: 18px 25px;
+  }
+  
+  .hero-overlay h1 {
+    font-size: 42px;
+  }
+  
+  .hero-overlay p {
+    font-size: 17px;
+  }
+  
+  .section-wrapper {
+    width: 90%;
+    gap: 25px;
+  }
+  
+  .section h2 {
+    font-size: 2.25rem;
+  }
+  
+  .volunteer-info-box,
+  .timing-info-box,
+  .responsibilities-info-box,
+  .training-info-box {
+    width: 40%;
+    max-width: 320px;
+  }
+}
+
 @media (max-width: 900px) {
+  .hero-image {
+    height: 400px;
+  }
+  
   .section-wrapper {
     flex-direction: column;
     text-align: center;
+    width: 90%;
+    gap: 20px;
   }
 
   .section {
     width: 100%;
+    text-align: left;
   }
 
   .volunteer-info-box,
@@ -426,15 +478,16 @@
   .training-info-box {
     width: 100%;
     max-width: none;
+    margin: 0 auto;
   }
 
   .hero-overlay {
-    width: 75%;
-    padding: 15px;
+    width: 80%;
+    padding: 15px 20px;
   }
 
   .hero-overlay h1 {
-    font-size: 28px;
+    font-size: 32px;
   }
 
   .hero-overlay p {
@@ -443,6 +496,11 @@
 
   .section h2 {
     font-size: 2rem;
+    text-align: center;
+  }
+  
+  .section p {
+    font-size: 1rem;
   }
 
   .shift-timings {
@@ -463,16 +521,60 @@
     max-width: 300px;
     text-align: center;
   }
+  
+  .apply-button {
+    font-size: 17px;
+    padding: 14px 28px;
+    width: 100%;
+    max-width: 300px;
+  }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
+  .hero-image {
+    height: 350px;
+  }
+  
+  .hero-overlay {
+    width: 85%;
+    padding: 15px;
+  }
+  
+  .hero-overlay h1 {
+    font-size: 28px;
+    line-height: 1.1;
+  }
+  
+  .hero-overlay p {
+    font-size: 15px;
+  }
+  
   .section-wrapper {
     width: 95%;
-    margin: 30px auto;
+    margin: 20px auto;
+    gap: 15px;
   }
 
   .section {
     padding: 20px;
+  }
+  
+  .section h2 {
+    font-size: 1.85rem;
+    margin-bottom: 15px;
+  }
+  
+  .section p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+  
+  .section h3 {
+    font-size: 1.3rem;
+  }
+  
+  .section h4 {
+    font-size: 1.1rem;
   }
 
   .volunteer-info-box,
@@ -480,6 +582,21 @@
   .responsibilities-info-box,
   .training-info-box {
     padding: 20px;
+  }
+  
+  .volunteer-info-box h3,
+  .timing-info-box h3,
+  .responsibilities-info-box h3,
+  .training-info-box h3 {
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+  }
+  
+  .volunteer-info-box ul,
+  .timing-info-box ul,
+  .responsibilities-info-box ul,
+  .training-info-box ul {
+    font-size: 0.95rem;
   }
 
   .cta-section {
@@ -501,5 +618,144 @@
     height: 35px;
     font-size: 1rem;
     margin-right: 15px;
+  }
+  
+  .apply-button {
+    font-size: 16px;
+    padding: 13px 26px;
+    width: 100%;
+    max-width: 280px;
+  }
+  
+  .apply-button-container {
+    margin: 20px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-image {
+    height: 300px;
+  }
+  
+  .hero-overlay {
+    width: 90%;
+    padding: 12px 15px;
+  }
+  
+  .hero-overlay h1 {
+    font-size: 24px;
+    line-height: 1.1;
+    margin-bottom: 8px;
+  }
+  
+  .hero-overlay p {
+    font-size: 14px;
+  }
+  
+  .section-wrapper {
+    width: 95%;
+    margin: 15px auto;
+    gap: 12px;
+  }
+
+  .section {
+    padding: 15px;
+  }
+  
+  .section h2 {
+    font-size: 1.6rem;
+    margin-bottom: 12px;
+    line-height: 1.2;
+  }
+  
+  .section p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+  
+  .section h3 {
+    font-size: 1.2rem;
+    margin: 15px 0 8px 0;
+  }
+  
+  .section h4 {
+    font-size: 1rem;
+    margin: 12px 0 6px 0;
+  }
+
+  .volunteer-info-box,
+  .timing-info-box,
+  .responsibilities-info-box,
+  .training-info-box {
+    padding: 15px;
+  }
+  
+  .volunteer-info-box h3,
+  .timing-info-box h3,
+  .responsibilities-info-box h3,
+  .training-info-box h3 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+  
+  .volunteer-info-box ul,
+  .timing-info-box ul,
+  .responsibilities-info-box ul,
+  .training-info-box ul {
+    font-size: 0.9rem;
+    margin: 12px 0;
+    padding-left: 18px;
+  }
+  
+  .volunteer-info-box li,
+  .timing-info-box li,
+  .responsibilities-info-box li,
+  .training-info-box li {
+    margin: 6px 0;
+    line-height: 1.4;
+  }
+
+  .cta-section {
+    width: 95%;
+    padding: 25px 15px;
+  }
+  
+  .cta-section h3 {
+    font-size: 1.5rem;
+  }
+  
+  .cta-section p {
+    font-size: 1rem;
+  }
+
+  .shift-card,
+  .responsibility-item {
+    padding: 12px;
+  }
+
+  .training-step {
+    padding: 12px;
+    flex-direction: column; /* Stack vertically on small mobile */
+    align-items: center;
+    text-align: center;
+  }
+
+  .step-number {
+    width: 32px;
+    height: 32px;
+    font-size: 0.95rem;
+    margin-right: 0;
+    margin-bottom: 10px; /* Add spacing below number */
+  }
+  
+  .apply-button {
+    font-size: 16px;
+    padding: 12px 24px;
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .apply-button-container {
+    margin: 18px 0;
   }
 }

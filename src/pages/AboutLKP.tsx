@@ -25,7 +25,7 @@ const About = () => {
             and continue to be entirely volunteer-run
           </p>
         </div>
-        <img src={AhBoy} alt="Ah Boy" className="section-image" />
+        <img src={AhBoy} alt="Ah Boy" className="section-image" loading="lazy" />
       </div>
 
       {/* Our Mission */}
@@ -55,7 +55,7 @@ const About = () => {
           </ul>
         </div>
 
-        <img src={AhGirl} alt="Ah Girl" className="section-image" />
+        <img src={AhGirl} alt="Ah Girl" className="section-image" loading="lazy" />
       </div>
 
 

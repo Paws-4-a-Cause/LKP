@@ -35,7 +35,7 @@ const Events = () => {
               <CarouselItem key={event.slug} className="carousel-item">
                 <div className="event-description">
                   <h1 className="event-heading">{event.name}</h1>
-                  <img className="event-image" src={imageMap[event.image]} />
+                  <img className="event-image" src={imageMap[event.image]} alt={event.name} loading="lazy" />
                   <div className="event-details">
                     <p><strong>📅 Date:</strong> {event.date}</p>
                     <p><strong>🕒 Time:</strong> {event.time}</p>

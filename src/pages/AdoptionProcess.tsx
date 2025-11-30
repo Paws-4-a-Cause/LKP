@@ -1,5 +1,6 @@
 // import React from 'react';
 import './AdoptionProcess.css';
+import adoptionFormPdf from '../assets/adoption-form.pdf';
 
 
 const AdoptionProcess = () => {
@@ -57,7 +58,7 @@ const AdoptionProcess = () => {
       </section>
 
       <div className="cta-button">
-        <a href="/src/assets/adoption-form.pdf" target="_blank" rel="noopener noreferrer">
+        <a href={adoptionFormPdf} target="_blank" rel="noopener noreferrer">
           <button className="pdf-button">Copy Of Adoption Form</button>
         </a>
       </div>

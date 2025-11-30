@@ -17,7 +17,7 @@ export default function CatProfile() {
       {/* Left Section */}
       <div className="profile-left">
         <div className="name-with-paws">
-          <img src={paws} alt="paws icon" className="paws-icon" />
+          <img src={paws} alt="paws icon" className="paws-icon" loading="lazy" />
           <h1 className="cat-name">{cat.name.toUpperCase()}</h1>
         </div>
         <p className="bio">{cat.bio}</p>

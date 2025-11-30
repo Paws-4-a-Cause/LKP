@@ -21,16 +21,7 @@ const Donate = () => {
         </ul>
       </section>
 
-      <section className="section">
-        <h2>Contact Us</h2>
-        <p>Got questions? Reach out to us!</p>
-        <form className="contact-form">
-          <input type="text" placeholder="Your Name" />
-          <input type="email" placeholder="Your Email" />
-          <textarea placeholder="Your Message"></textarea>
-          <button className="donate-button">Send Message</button>
-        </form>
-      </section>
+
 
       <section className="section text-center">
         <h2>Support Us with Donations</h2>
@@ -46,8 +37,11 @@ const Donate = () => {
 
         <div className="qr-code">
           <p>Scan this QR code to donate via PayNow:</p>
-          <img src={PayNowQR}
-           alt="PayNow QR Code" />
+          <img 
+            src={PayNowQR}
+            alt="PayNow QR Code"
+            loading="lazy"
+          />
         </div>
       </section>
     </div>

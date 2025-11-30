@@ -190,4 +190,200 @@
   }
   
 
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .adoption-container {
+    padding: 1rem;
+  }
+  
+  .adoption-header h1 {
+    font-size: 2.5rem;
+  }
+  
+  .adoption-header p {
+    font-size: 1.1rem;
+  }
+  
+  .steps-container {
+    gap: 1.5rem;
+  }
+  
+  .step-card {
+    padding: 1.5rem;
+  }
+  
+  .step-title {
+    font-size: 1.3rem;
+  }
+  
+  .step-card p {
+    font-size: 1rem;
+  }
+  
+  .preparation-card {
+    width: 40%;
+  }
+}
+
+@media (max-width: 900px) {
+  .adoption-header h1 {
+    font-size: 2rem;
+  }
+  
+  .adoption-header p {
+    font-size: 1rem;
+  }
+  
+  .steps-container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .step-card {
+    padding: 1.25rem;
+  }
+  
+  .step-title {
+    font-size: 1.2rem;
+  }
+  
+  .preparation-card {
+    width: 60%;
+  }
+  
+  .preparation h2 {
+    font-size: 1.5rem;
+  }
+  
+  ul li {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .adoption-container {
+    padding: 0.75rem;
+  }
+  
+  .adoption-header {
+    padding: 2rem 1rem;
+  }
+  
+  .adoption-header h1 {
+    font-size: 1.75rem;
+    line-height: 1.2;
+  }
+  
+  .adoption-header p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+  
+  .steps-container {
+    padding: 1rem 0.5rem;
+  }
+  
+  .step-card {
+    padding: 1rem;
+  }
+  
+  .step-title {
+    font-size: 1.1rem;
+  }
+  
+  .step-card p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+  
+  .preparation {
+    padding: 1rem;
+    margin-top: 1.5rem;
+  }
+  
+  .preparation h2 {
+    font-size: 1.3rem;
+  }
+  
+  .preparation-card {
+    width: 80%;
+    padding: 1rem;
+  }
+  
+  .preparation-title {
+    font-size: 1.3rem;
+  }
+  
+  ul li {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+  
+  .pdf-button {
+    font-size: 0.95rem;
+    padding: 0.4rem 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .adoption-container {
+    padding: 0.5rem;
+  }
+  
+  .adoption-header {
+    padding: 1.5rem 0.75rem;
+  }
+  
+  .adoption-header h1 {
+    font-size: 1.5rem;
+  }
+  
+  .adoption-header p {
+    font-size: 0.9rem;
+  }
+  
+  .steps-container {
+    padding: 0.75rem 0.25rem;
+  }
+  
+  .step-card {
+    padding: 0.75rem;
+  }
+  
+  .step-title {
+    font-size: 1rem;
+  }
+  
+  .step-card p {
+    font-size: 0.9rem;
+  }
+  
+  .preparation {
+    padding: 0.75rem;
+  }
+  
+  .preparation h2 {
+    font-size: 1.2rem;
+  }
+  
+  .preparation-card {
+    width: 90%;
+    padding: 0.75rem;
+  }
+  
+  .preparation-title {
+    font-size: 1.2rem;
+  }
+  
+  ul li {
+    font-size: 0.95rem;
+  }
+  
+  .pdf-button {
+    font-size: 0.9rem;
+    padding: 0.35rem 0.7rem;
+  }
+}
+  
+
   
