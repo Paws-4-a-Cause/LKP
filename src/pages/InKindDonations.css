@@ -93,6 +93,138 @@
 }
 
 
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .donations-container {
+    padding: 1rem;
+  }
+  
+  .donations-header h1 {
+    font-size: 2.5rem;
+  }
+  
+  .donations-header p {
+    font-size: 1.1rem;
+  }
+  
+  .donations-grid {
+    gap: 1.5rem;
+  }
+  
+  .donation-card {
+    padding: 1.5rem;
+  }
+  
+  .donation-card h3 {
+    font-size: 1.3rem;
+  }
+  
+  .donation-card p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .donations-header h1 {
+    font-size: 2rem;
+  }
+  
+  .donations-header p {
+    font-size: 1rem;
+  }
+  
+  .donations-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  
+  .donation-card {
+    padding: 1.25rem;
+  }
+  
+  .donation-card h3 {
+    font-size: 1.2rem;
+  }
+  
+  .donation-card p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .donations-container {
+    padding: 0.75rem;
+  }
+  
+  .donations-header {
+    padding: 2rem 1rem;
+  }
+  
+  .donations-header h1 {
+    font-size: 1.75rem;
+    line-height: 1.2;
+  }
+  
+  .donations-header p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+  
+  .donations-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem 0.5rem;
+  }
+  
+  .donation-card {
+    padding: 1rem;
+  }
+  
+  .donation-card h3 {
+    font-size: 1.1rem;
+  }
+  
+  .donation-card p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 480px) {
+  .donations-container {
+    padding: 0.5rem;
+  }
+  
+  .donations-header {
+    padding: 1.5rem 0.75rem;
+  }
+  
+  .donations-header h1 {
+    font-size: 1.5rem;
+  }
+  
+  .donations-header p {
+    font-size: 0.9rem;
+  }
+  
+  .donations-grid {
+    padding: 0.75rem 0.25rem;
+  }
+  
+  .donation-card {
+    padding: 0.75rem;
+  }
+  
+  .donation-card h3 {
+    font-size: 1rem;
+  }
+  
+  .donation-card p {
+    font-size: 0.85rem;
+  }
+}
+
+
   
   
   

@@ -36,7 +36,7 @@ export default function CatGallery() {
               onClick={() => navigate(`/cats/${cat.slug}`)}
               style={{ cursor: "pointer" }}
             >
-              <img src={catImage} alt={cat.name} className="cat-image" />
+              <img src={catImage} alt={cat.name} className="cat-image" loading="lazy" />
               <h3>{cat.name}</h3>
               {/* <Link to={`/cats/${cat.slug}`} className="cat-link">View Profile</Link> */}
             </div>

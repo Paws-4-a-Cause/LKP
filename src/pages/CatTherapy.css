@@ -10,21 +10,23 @@
 }
 
 .cat-therapy-container {
-  padding: 2rem;
+  padding: 0.5rem;
   width: 100%;
   margin: 0;
   background-color: #ffeee0;
-  min-height: 100vh;
+  min-height: auto;
+  margin-top: 0;
 }
 
 .cat-therapy-title {
-  margin-top: 100px;
-  font-size: 3.5rem;
+  margin-top: 0;
+  font-size: 2.5rem;
   font-weight: bold;
   text-align: center;
   color: #4a7552;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   font-family: 'Le Petit Cochon', cursive;
+  line-height: 1.2;
 }
 
 .cat-therapy-section {
@@ -38,15 +40,18 @@
 
 /* Ensuring 'Nunito' is applied to h2 in .section */
 .cat-therapy-section h2 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: bold;
   color: #4a7552;
   font-family: 'Nunito', sans-serif !important; /* Use !important to avoid overrides */
+  margin-bottom: 1rem;
 }
 
 .cat-therapy-section p {
   color: #555;
   margin-top: 0.5rem;
+  line-height: 1.6;
+  font-size: 1rem;
 }
 
 .section-list {
@@ -54,21 +59,159 @@
   padding-left: 1.5rem;
   color: #555;
   margin-top: 0.5rem;
+  line-height: 1.6;
+}
+
+.section-list li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
 }
 
 .contact-button {
   display: inline-block;
   background-color: #f57d2f;
   color: white;
-  padding: 0.75rem;
+  padding: 0.75rem 1.5rem;
   border-radius: 0.5rem;
   text-align: center;
   text-decoration: none;
   font-weight: bold;
   transition: background-color 0.3s ease;
   margin-top: 1rem;
+  font-size: 1rem;
 }
 
 .contact-button:hover {
   background-color: #d45a0a;
+  transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .cat-therapy-container {
+    padding: 2rem;
+  }
+  
+  .cat-therapy-title {
+    font-size: 3rem;
+  }
+  
+  .cat-therapy-section h2 {
+    font-size: 2rem;
+  }
+  
+  .cat-therapy-section p,
+  .section-list li {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .cat-therapy-container {
+    padding: 3rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .cat-therapy-title {
+    font-size: 3.5rem;
+  }
+  
+  .cat-therapy-section h2 {
+    font-size: 2.2rem;
+  }
+  
+  .cat-therapy-section p,
+  .section-list li {
+    font-size: 1.2rem;
+  }
+  
+  .contact-button {
+    font-size: 1.1rem;
+    padding: 1rem 2rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .cat-therapy-container {
+    padding: 4rem;
+  }
+  
+  .cat-therapy-title {
+    font-size: 4rem;
+  }
+  
+  .cat-therapy-section h2 {
+    font-size: 2.5rem;
+  }
+  
+  .cat-therapy-section p,
+  .section-list li {
+    font-size: 1.3rem;
+  }
+}
+
+/* Mobile-first improvements */
+@media (max-width: 767px) {
+  .cat-therapy-container {
+    padding: 1rem;
+    margin-top: 80px; /* Smaller margin for mobile */
+  }
+  
+  .cat-therapy-title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .cat-therapy-section {
+    padding: 1rem;
+    margin-top: 1.5rem;
+  }
+  
+  .cat-therapy-section h2 {
+    font-size: 1.5rem;
+  }
+  
+  .cat-therapy-section p,
+  .section-list li {
+    font-size: 0.95rem;
+  }
+  
+  .contact-button {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+  }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+  .cat-therapy-container {
+    padding: 0.75rem;
+    margin-top: 70px;
+  }
+  
+  .cat-therapy-title {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .cat-therapy-section {
+    padding: 0.75rem;
+    margin-top: 1rem;
+  }
+  
+  .cat-therapy-section h2 {
+    font-size: 1.3rem;
+  }
+  
+  .cat-therapy-section p,
+  .section-list li {
+    font-size: 0.9rem;
+  }
+  
+  .section-list {
+    padding-left: 1rem;
+  }
 }

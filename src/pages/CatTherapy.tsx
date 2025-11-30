@@ -1,4 +1,3 @@
-import React from "react";
 import "./CatTherapy.css";  // Assuming you have this CSS file for styling
 
 const CatTherapy = () => {
